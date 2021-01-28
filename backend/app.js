@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 //My Routes
-const newsletter = require("./routes/newsletterEmail");
+const newsletter = require("./routes/newsletter");
 
 const app = express();
 
