@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Home from './Home';
+import Newsletter from './Newsletter';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <h1>Working</h1>
       <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact component={Newsletter} />
       </Switch> 
       </BrowserRouter> 
     </>
