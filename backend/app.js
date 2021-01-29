@@ -9,6 +9,7 @@ const cors = require("cors");
 const newsletter = require("./routes/newsletter");
 
 const app = express();
+app.use(cors());
 
 mongoose
   .connect(process.env.DATABASE, {
@@ -22,7 +23,6 @@ mongoose
 
 //Middlewares
 app.use(bodyParser.json());
-app.use(cors());
 
 //Routes
 app.use("/", newsletter);
