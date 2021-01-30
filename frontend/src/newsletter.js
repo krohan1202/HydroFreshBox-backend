@@ -63,10 +63,13 @@ function Newsletter() {
     );
   };
 
-  function signUpForm() {
-    return (
+
+  return (
+    <div>
+      {successMessage()}
+      {errorMessage()}
+      <h1>Testing</h1>
       <div>
-        <div>
           <form>
             <div>
               <label>Email</label>
@@ -81,15 +84,7 @@ function Newsletter() {
             </button>
           </form>
         </div>
-      </div>
-    );
-  }
-  return (
-    <div>
-      {successMessage()}
-      {errorMessage()}
-      <h1>Testing</h1>
-      {signUpForm()}
+
       <p>{JSON.stringify(values)}</p>
     </div>
   );
