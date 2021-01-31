@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { newsletter } from "./newsletterApi";
+import { newsletter } from "../../apiCalls/newsletterApi";
 
 function Newsletter() {
 
@@ -68,7 +68,7 @@ function Newsletter() {
     <div>
       {successMessage()}
       {errorMessage()}
-      <h1>Testing</h1>
+      <p className="newsletter__newsletterHeading">Newsletter</p>
       <div>
           <form>
             <div>
