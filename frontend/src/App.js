@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Newsletter from './components/Home/Newsletter';
 
 function App() {
+
   return (
     <>
       <BrowserRouter>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../styles/newsletter.scss";
 import { newsletter } from "../../apiCalls/newsletterApi";
 
 function Newsletter() {
@@ -16,29 +17,29 @@ function Newsletter() {
   };
 
   const onSubmit = (event) => {
-      console.log(values);
+      // console.log(values);
     event.preventDefault();
 
-    // setValues({ ...values, error: false });
     newsletter({email})
-      .then((values) => {
-        console.log(values, email);
-        if (error === true) {
-          setValues({ ...values, error: error, success: false });
-          console.log(error, success);
-        } else {
-          setValues({
-            ...values,
-            email: "",
-            error: "",
-            success: true,
-          });
-          console.log(error, success);
-        }
-      })
-      .catch(console.log("Error in signup"));
+    .then((values) => {
+      // console.log(values, email);
+      if (error === true) {
+        setValues({ ...values, error: error, success: false });
+        console.log(error, success);
+      } else {
+        setValues({
+          ...values,
+          email: "",
+          error: "",
+          success: true,
+        });
+      }
+    })
+      .catch(error => {
+            console.log('Error fetching and parsing data', error);
+     });
   };
-
+  // console.log(values);
   const successMessage = () => {
     return (
       <div>
@@ -65,7 +66,7 @@ function Newsletter() {
 
 
   return (
-    <div>
+    <div className="newsletterSection">
       {successMessage()}
       {errorMessage()}
       <p className="newsletter__newsletterHeading">Newsletter</p>
