@@ -69,18 +69,27 @@ function Newsletter() {
     <div className="newsletterSection">
       {successMessage()}
       {errorMessage()}
-      <p className="newsletter__newsletterHeading">Newsletter</p>
+      <p className="newsletter__newsletterHeading">NEWSLETTER</p>
+
+      <div className="newsletter__firstHeading">
+        <span className="newsletter__firstHeading--subscribe">Subscribe</span>
+        <span className="newsletter__firstHeading--toGet">to get</span>
+      </div>
       <div>
+        <p className="newsletter__secondHeading--latestUpdates">the latest updates</p>
+      </div>
+      <div className="newsletter__emailPart">
           <form>
-            <div>
-              <label>Email</label>
+            
               <input
+              className="newsletter__emailBox"
                 onChange={handleChange("email")}
                 type="email"
                 value={email}
+                placeholder="Email address"
               />
-            </div>
-            <button onClick={onSubmit}>
+            
+            <button className="newsletter__submitBtn" onClick={onSubmit}>
               Submit
             </button>
           </form>
