@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/newsletter.scss";
+import Arrow from "../../assets/arrow.svg";
 import { newsletter } from "../../apiCalls/newsletterApi";
 
 function Newsletter() {
@@ -40,26 +41,19 @@ function Newsletter() {
      });
   };
   // console.log(values);
+
   const successMessage = () => {
     return (
-      <div>
-        <div>
-          <div style={{ display: success ? "" : "none" }} >
-            New account has been created!
-          </div>
-        </div>
+      <div style={{ display: success ? "" : "none" }} >
+        New account has been created!
       </div>
     );
   };
 
   const errorMessage = () => {
     return (
-      <div>
-        <div>
-          <div style={{ display: error ? "" : "none" }} >
-            {error}
-          </div>
-        </div>
+      <div style={{ display: error ? "" : "none" }} >
+        {error}
       </div>
     );
   };
@@ -78,7 +72,8 @@ function Newsletter() {
       <div>
         <p className="newsletter__secondHeading--latestUpdates">the latest updates</p>
       </div>
-      <div className="newsletter__emailPart">
+
+      <div class="newsletter__emailPart">
           <form>
             
               <input
@@ -87,15 +82,17 @@ function Newsletter() {
                 type="email"
                 value={email}
                 placeholder="Email address"
+                pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required
               />
             
-            <button className="newsletter__submitBtn" onClick={onSubmit}>
-              Submit
-            </button>
+              <button className="newsletter__subscribeBtn" onClick={onSubmit}>
+                <img id="newsletter__subscribeBtn--arrow" src={Arrow} /> Subscribe
+              </button>
+            
           </form>
         </div>
 
-      <p>{JSON.stringify(values)}</p>
+      {/* <p>{JSON.stringify(values)}</p> */}
     </div>
   );
 }

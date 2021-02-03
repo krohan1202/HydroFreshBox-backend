@@ -9,7 +9,10 @@
   src: url("../fonts/SweetSansProMedium.otf");
   font-weight: normal;
 }
+$cornflower-lilac: #ffaea9;
+
 .newsletterSection {
+  background-color: #f6fff7;
   height: 50%;
 }
 
@@ -18,7 +21,6 @@
   text-align: center;
   font-family: Gadugi;
   font-size: 13px;
-  // line-height: 21px;
   letter-spacing: 0.32em;
   color: #303030;
   padding-top: 98px;
@@ -53,19 +55,62 @@
   justify-content: center;
   align-items: center;
   margin-top: 61px;
+  padding-bottom: 143px;
 }
 .newsletter__emailBox {
   height: 48px;
-  width: 350px;
-  border-color: #00ac85;
+  width: 330px;
+  border: 1px solid #00ac85;
   font-family: "sweet-sans-pro", sans-serif;
-  font-style: normal;
-  font-weight: 100;
+  padding-left: 31px;
+  font-size: 15px;
 }
 
-.newsletter__submitBtn {
-  height: 54px;
+.newsletter__subscribeBtn {
+  border: none;
+  height: 52px;
   width: 180px;
   background-color: #00ac85;
   margin-left: 50px;
+  color: #fff;
+  font-size: 15px;
+  font-family: "sweet-sans-pro", sans-serif;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.12);
+
+  #newsletter__subscribeBtn--arrow {
+    width: 8.5px;
+    height: 14.5px;
+    padding-top: 2.4px;
+    padding-right: 13px;
+  }
+
+  &:hover {
+    animation: moveText 0.4s ease-in-out both alternate;
+  }
+  &:hover > #newsletter__subscribeBtn--arrow {
+    position: absolute;
+    animation: moveArrow 0.4s ease-in-out both alternate;
+  }
+}
+
+@keyframes moveArrow {
+  0% {
+    padding-left: 0%;
+  }
+  100% {
+    padding-top: 4.4px;
+    padding-left: 6%;
+  }
+}
+
+@keyframes moveText {
+  from {
+    text-align: center;
+  }
+  to {
+    padding-right: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 172, 133, 0.2),
+      0 6px 20px 0 rgba(0, 172, 133, 0.29);
+  }
 }
