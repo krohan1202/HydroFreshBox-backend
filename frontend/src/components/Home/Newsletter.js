@@ -23,10 +23,10 @@ function Newsletter() {
 
     newsletter({email})
     .then((values) => {
-      // console.log(values, email);
-      if (error === true) {
-        setValues({ ...values, error: error, success: false });
-        console.log(error, success);
+      console.log(values, email);
+      if (values.error) {
+        setValues({ ...values, error: values.error, success: false });
+        console.log(values.error, success);
       } else {
         setValues({
           ...values,
@@ -44,7 +44,7 @@ function Newsletter() {
 
   const successMessage = () => {
     return (
-      <div style={{ display: success ? "" : "none" }} >
+      <div style={{ display: values.success ? true : "none" }} >
         New account has been created!
       </div>
     );
@@ -52,7 +52,7 @@ function Newsletter() {
 
   const errorMessage = () => {
     return (
-      <div style={{ display: error ? "" : "none" }} >
+      <div style={{ display: values.error ? "" : "none" }} >
         {error}
       </div>
     );
@@ -73,7 +73,7 @@ function Newsletter() {
         <p className="newsletter__secondHeading--latestUpdates">the latest updates</p>
       </div>
 
-      <div class="newsletter__emailPart">
+      <div className="newsletter__emailPart">
           <form>
             
               <input

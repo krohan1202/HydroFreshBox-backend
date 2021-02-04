@@ -63,6 +63,10 @@
   font-family: "sweet-sans-pro", sans-serif;
   padding-left: 31px;
   font-size: 15px;
+
+  &:focus {
+    outline: 0.5px ridge #00ac85;
+  }
 }
 
 .newsletter__subscribeBtn {
@@ -84,6 +88,9 @@
     padding-right: 13px;
   }
 
+  &:focus {
+    outline: 0px;
+  }
   &:hover {
     animation: moveText 0.4s ease-in-out both alternate;
   }
