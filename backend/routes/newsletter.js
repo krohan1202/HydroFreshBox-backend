@@ -6,7 +6,7 @@ const { getNewsletterEmail } = require("../controllers/newsletter");
 router.post(
   "/",
   [
-    check("email", "email is required").isEmail()
+    check("email", "Not a valid email.").isEmail()
   ],
   getNewsletterEmail
 );
