@@ -208,6 +208,7 @@
   content: "";
   background-color: #eef5df;
   display: none;
+  display: block;
 }
 .x::before {
   -ms-transform: rotate(-45deg);
@@ -221,8 +222,4 @@
 }
 .x:hover {
   cursor: pointer;
-}
-.x:hover::before,
-.x:hover::after {
-  display: block;
 }

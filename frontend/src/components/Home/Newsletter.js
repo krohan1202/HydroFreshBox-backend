@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import $ from "jquery";
 import "../../styles/newsletter.scss";
 import Arrow from "../../assets/arrow.svg";
 import { newsletter } from "../../apiCalls/newsletterApi";
@@ -42,14 +43,25 @@ function Newsletter() {
   };
   // console.log(values);
 
+  var vidAnimation = $('.success');
+    
+    const handleMouseMove = ((e) => {
+        e.persist();
+        
+        vidAnimation.css({
+            'transition': "0.5s ease",
+            'opacity': 0,
+            'z-index': -1
+        });
+    });
+
   const successMessage = () => {
 
     return (
-      <div style={{ display: values.success ? true : "none" }} >
+      <div className="success" style={{ display: values.success ? true : "none" }} >
         <div className="newsletter__successMessage--background"></div>
         <div className="scale-in-top newsletter__successMessage">
-          <div className="x">
-            {/* <div className="menu-btn__cross"></div> */}
+          <div className="x" onClick={handleMouseMove}>
           </div>
           <p className="newsletter__successMessage--text">Congrats! You are now subscribed. 🎉</p>
         </div>
