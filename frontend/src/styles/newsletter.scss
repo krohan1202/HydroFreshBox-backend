@@ -1,18 +1,8 @@
-@font-face {
-  font-family: Gadugi;
-  src: url("../fonts/gadugi-normal.ttf") format("truetype");
-  font-weight: normal;
-}
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital@1&display=swap");
-@font-face {
-  font-family: sweet-sans-pro;
-  src: url("../fonts/SweetSansProMedium.otf");
-  font-weight: normal;
-}
+$base-green: #00ac85;
+$sweet-sans-font: "sweet-sans-pro", sans-serif;
 
 .newsletterSection {
   background-color: #f6fff7;
-  height: 50%;
 }
 
 .newsletter__newsletterHeading {
@@ -27,7 +17,6 @@
 
 .newsletter__firstHeading {
   text-align: center;
-  color: #000000;
   font-size: 3.38vw;
   margin-top: 40px;
 }
@@ -37,13 +26,16 @@
   font-style: italic;
 }
 
+.newsletter__firstHeading--toGet,
+.newsletter__secondHeading--latestUpdates {
+  font-family: "Helvetica", serif;
+}
+
 .newsletter__firstHeading--toGet {
-  font-family: "Helvetica";
   margin-left: 15px;
 }
 
 .newsletter__secondHeading--latestUpdates {
-  font-family: "Helvetica";
   font-size: 3.38vw;
   text-align: center;
   margin: 0;
@@ -59,13 +51,13 @@
 .newsletter__emailBox {
   height: 48px;
   width: 330px;
-  border: 1px solid #00ac85;
-  font-family: "sweet-sans-pro", sans-serif;
+  border: 1px solid $base-green;
+  font-family: $sweet-sans-font;
   padding-left: 31px;
   font-size: 15px;
 
   &:focus {
-    outline: 0.5px ridge #00ac85;
+    outline: 0.5px ridge $base-green;
   }
 }
 
@@ -73,11 +65,11 @@
   border: none;
   height: 52px;
   width: 180px;
-  background-color: #00ac85;
+  background-color: $base-green;
   margin-left: 50px;
   color: #fff;
   font-size: 15px;
-  font-family: "sweet-sans-pro", sans-serif;
+  font-family: $sweet-sans-font;
   cursor: pointer;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.12);
 
@@ -92,11 +84,13 @@
     outline: 0px;
   }
   &:hover {
-    animation: moveText 0.4s ease-out both alternate;
+    animation: moveText 0.1s ease-out both alternate;
+    box-shadow: 0 4px 8px 0 rgba(0, 172, 133, 0.2),
+      0 6px 20px 0 rgba(0, 172, 133, 0.29);
   }
   &:hover > #newsletter__subscribeBtn--arrow {
     position: absolute;
-    animation: moveArrow 0.4s ease-out both alternate;
+    animation: moveArrow 0.1s ease-out both alternate;
   }
 }
 
@@ -116,11 +110,10 @@
   }
   100% {
     padding-right: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 172, 133, 0.2),
-      0 6px 20px 0 rgba(0, 172, 133, 0.29);
   }
 }
 
+// Error Message
 .newsletter__errMessage {
   height: 25px;
   width: 20%;
@@ -132,17 +125,18 @@
   padding-right: 420px;
   top: 55.3%;
   font-size: 0.91vw;
-  font-family: "sweet-sans-pro", sans-serif;
+  font-family: $sweet-sans-font;
 }
 
+//Success Message
 .newsletter__successMessage--background {
-  background-color: rgb(107, 107, 107);
+  background-color: rgb(207, 207, 207);
   opacity: 0.2;
   top: 0%;
+  left: 0%;
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 1;
 }
 
 .newsletter__successMessage {
@@ -157,7 +151,7 @@
   box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
 }
 .scale-in-top {
-  z-index: 2;
+  z-index: 1;
   -webkit-animation: scale-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -182,13 +176,13 @@
 .newsletter__successMessage--text {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6vw;
-  color: #00ac85;
+  color: $base-green;
   text-align: center;
   position: relative;
-  top: 80%;
+  top: 75%;
 }
 
-.x {
+.newsletter__successMsg--closeBtn {
   position: relative;
   width: 25px;
   height: 25px;
@@ -197,29 +191,30 @@
   border-radius: 50%;
   left: 91%;
   top: 5%;
-}
-.x::before,
-.x::after {
-  position: absolute;
-  top: 11px;
-  left: 5px;
-  width: 15px;
-  height: 3px;
-  content: "";
-  background-color: #eef5df;
-  display: none;
-  display: block;
-}
-.x::before {
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-.x::after {
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.x:hover {
-  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 11px;
+    left: 5px;
+    width: 16px;
+    height: 3px;
+    content: "";
+    background-color: #eef5df;
+    display: none;
+    display: block;
+  }
+  &::before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  &::after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }

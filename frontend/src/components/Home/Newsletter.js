@@ -43,13 +43,13 @@ function Newsletter() {
   };
   // console.log(values);
 
-  var vidAnimation = $('.success');
+  var closesuccessMsg = $('.newsletter__wholeSuccessMsg');
     
-    const handleMouseMove = ((e) => {
+    const handlesuccessMsg = ((e) => {
         e.persist();
         
-        vidAnimation.css({
-            'transition': "0.5s ease",
+        closesuccessMsg.css({
+            'transition': "0.7s ease",
             'opacity': 0,
             'z-index': -1
         });
@@ -58,10 +58,10 @@ function Newsletter() {
   const successMessage = () => {
 
     return (
-      <div className="success" style={{ display: values.success ? true : "none" }} >
+      <div className="newsletter__wholeSuccessMsg" style={{ display: values.success ? true : "none" }} >
         <div className="newsletter__successMessage--background"></div>
         <div className="scale-in-top newsletter__successMessage">
-          <div className="x" onClick={handleMouseMove}>
+          <div className="newsletter__successMsg--closeBtn" onClick={handlesuccessMsg}>
           </div>
           <p className="newsletter__successMessage--text">Congrats! You are now subscribed. 🎉</p>
         </div>
@@ -100,11 +100,10 @@ function Newsletter() {
                 type="email"
                 value={email}
                 placeholder="Email address"
-                pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required
               />
 
               <button className="newsletter__subscribeBtn" onClick={onSubmit}>
-                <img id="newsletter__subscribeBtn--arrow" src={Arrow} /> Subscribe
+                <img id="newsletter__subscribeBtn--arrow" src={Arrow} alt="->"/> Subscribe
               </button>
 
           </form>
