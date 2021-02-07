@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Newsletter from './components/Home/Newsletter';
+import Home from './components/Home/Home';
+
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <>
       <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={Newsletter} />
+        <Route path="/" exact component={Home} />
       </Switch> 
       </BrowserRouter> 
     </>
