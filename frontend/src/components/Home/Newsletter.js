@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import $ from "jquery";
-import "../../styles/newsletter.scss";
+import "../../styles/Newsletter.scss";
 import Arrow from "../../assets/arrow.svg";
 import { newsletter } from "../../apiCalls/newsletterApi";
 

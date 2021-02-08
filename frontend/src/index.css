@@ -3,11 +3,17 @@
   src: url("./fonts/gadugi-normal.ttf") format("truetype");
   font-weight: normal;
 }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital@1&display=swap");
 @font-face {
-  font-family: sweet-sans-pro;
+  font-family: sweet-sans-pro-medium;
   src: url("./fonts/SweetSansProMedium.otf");
   font-weight: normal;
+}
+@font-face {
+  font-family: sweet-sans-pro-bold;
+  src: url("./fonts/SweetSansProBold.otf");
+  font-weight: 700;
 }
 
 body {

@@ -1,0 +1,95 @@
+$base-green: #00ac85;
+$sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
+$sweet-sans-bold: "sweet-sans-pro-bold", sans-serif;
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+  height: 66px;
+  left: 0px;
+  top: 0px;
+  background-color: #afe9ef;
+  z-index: 2;
+  opacity: 95%;
+}
+.navlinks__shop,
+.navlinks__about,
+.navlinks__pods,
+.navlinks__news,
+.navlinks__contact {
+  position: fixed;
+  height: 1.56vw;
+  top: 25px;
+  color: #000;
+
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.02vw;
+  cursor: pointer;
+}
+
+.navlinks__shop {
+  left: 55.25vw;
+}
+.navlinks__about {
+  left: 63.8vw;
+}
+.navlinks__pods {
+  left: 72.8vw;
+}
+.navlinks__news {
+  left: 81.25vw;
+}
+.navlinks__contact {
+  left: 90vw;
+}
+.nav__bottomLine {
+  top: 66px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: none;
+  border-top: 1px solid #000;
+  width: 93%;
+  z-index: 2;
+}
+
+.hero__background {
+  background-color: #afe9ef;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0;
+  position: absolute;
+}
+
+// Main Hero Heading
+.hero_headingWords--1stLine,
+.hero_headingWords--2ndLine,
+.hero_headingWords--3rdLine {
+  position: absolute;
+  font-family: $sweet-sans-bold;
+  font-size: 3.52vw;
+  color: #1a1917;
+  left: 6vw;
+}
+.hero_headingWords--1stLine {
+  top: 31%;
+}
+.hero_headingWords--2ndLine {
+  top: 39.7%;
+}
+.hero_headingWords--3rdLine {
+  top: 48.5%;
+}

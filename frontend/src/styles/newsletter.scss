@@ -1,5 +1,5 @@
 $base-green: #00ac85;
-$sweet-sans-font: "sweet-sans-pro", sans-serif;
+$sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
 
 .newsletterSection {
   background-color: #f6fff7;
@@ -52,7 +52,7 @@ $sweet-sans-font: "sweet-sans-pro", sans-serif;
   height: 48px;
   width: 330px;
   border: 1px solid $base-green;
-  font-family: $sweet-sans-font;
+  font-family: $sweet-sans-medium;
   padding-left: 31px;
   font-size: 15px;
 
@@ -69,7 +69,7 @@ $sweet-sans-font: "sweet-sans-pro", sans-serif;
   margin-left: 50px;
   color: #fff;
   font-size: 15px;
-  font-family: $sweet-sans-font;
+  font-family: $sweet-sans-medium;
   cursor: pointer;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.12);
 
@@ -125,7 +125,7 @@ $sweet-sans-font: "sweet-sans-pro", sans-serif;
   padding-right: 420px;
   top: 55.3%;
   font-size: 0.91vw;
-  font-family: $sweet-sans-font;
+  font-family: $sweet-sans-medium;
 }
 
 //Success Message
