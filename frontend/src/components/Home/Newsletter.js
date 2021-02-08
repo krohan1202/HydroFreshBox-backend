@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import $ from "jquery";
 import "../../styles/Newsletter.scss";
-import Arrow from "../../assets/arrow.svg";
+import Arrow from "../../assets/Home/2-How we make an impact/Arrow.png";
 import { newsletter } from "../../apiCalls/newsletterApi";
 
 function Newsletter() {

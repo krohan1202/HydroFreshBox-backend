@@ -33,11 +33,10 @@ function Home() {
                 
             {/* Main Hero Heading */}
             <div>
-                <span className="hero_headingWords--1stLine">Providing the suitable</span>
-                <span className="hero_headingWords--2ndLine">environment for plants to</span>
-                <span className="hero_headingWords--3rdLine">grow faster and fresher.</span>
+                <span className="hero_headingWords">Providing the suitable
+                environment for plants to grow faster and fresher.</span>
             </div>
-            <button className="hero__cta"></button>
+            <button className="hero__cta">Shop Now </button>
             
         </>
     )

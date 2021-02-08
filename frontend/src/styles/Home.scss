@@ -5,11 +5,9 @@ $sweet-sans-bold: "sweet-sans-pro-bold", sans-serif;
 li {
   list-style-type: none;
 }
-
 a {
   text-decoration: none;
 }
-
 .navbar {
   position: fixed;
   width: 100vw;
@@ -75,21 +73,17 @@ a {
 }
 
 // Main Hero Heading
-.hero_headingWords--1stLine,
-.hero_headingWords--2ndLine,
-.hero_headingWords--3rdLine {
+.hero_headingWords {
   position: absolute;
   font-family: $sweet-sans-bold;
   font-size: 3.52vw;
   color: #1a1917;
   left: 6vw;
-}
-.hero_headingWords--1stLine {
   top: 31%;
+  width: 50%;
+  line-height: 70px;
 }
-.hero_headingWords--2ndLine {
-  top: 39.7%;
-}
-.hero_headingWords--3rdLine {
-  top: 48.5%;
+
+.hero__cta {
+  position: absolute;
 }
