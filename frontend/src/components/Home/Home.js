@@ -2,7 +2,11 @@ import "../../styles/Home.scss";
 import Newsletter from "./Newsletter";
 
 //Hero assets
-
+import HeroPic from "../../assets/Home/1-Hero Section/Hero Pic.png";
+//How we make an impact / About Us Section
+import LeftPic from "../../assets/Home/2-How we make an impact/Left side Pic.png";
+import RightPic from "../../assets/Home/2-How we make an impact/Right side Pic.png";
+import Arrow from "../../assets/Home/2-How we make an impact/Arrow.png";
 
 function Home() {
     return (
@@ -39,7 +43,8 @@ function Home() {
                 <span className="hero__headingWords">Providing the suitable
                 environment for plants to grow faster and fresher.</span>
             </div>
-            <button className="hero__cta">
+            
+                <a className="hero__cta" href="/shop">
                 Shop Now
                 <svg id="hero__arrow" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
@@ -51,7 +56,22 @@ function Home() {
                     </clipPath>
                     </defs>
                 </svg>
-            </button>
+                </a>
+            
+
+            <img src={HeroPic} className="hero__pic"/>
+            
+            {/* How we make an impact / About Us Section */}
+            <div className="makeAnImpact">
+                <p className="makeAnImpact__Heading">How we make an impact</p>
+                <p className="makeAnImpact__text">Lorem ipsum dolor sit amet, consect etu adipiscing elit. Quisque, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec scelerisque solli lenaria loipsum aute irure dolor.</p>
+                <a className="makeAnImpact__knowMoreBtn" href="/about">
+                    <img id="newsletter__knowMoreBtn--arrow" src={Arrow} alt="->"/> Know More
+                </a>
+
+                <img src={LeftPic} className="makeAnImpact__LeftPic" />
+                <img src={RightPic} className="makeAnImpact__RightPic" />
+            </div>
             
         </>
     )

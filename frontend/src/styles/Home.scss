@@ -1,6 +1,8 @@
 $base-green: #00ac85;
 $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
 $sweet-sans-bold: "sweet-sans-pro-bold", sans-serif;
+$gadugi: "Gadugi", serif;
+$helve: "Helvetica", sans-serif;
 
 li {
   list-style-type: none;
@@ -12,8 +14,8 @@ a {
   position: fixed;
   width: 100vw;
   height: 66px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   background-color: #afe9ef;
   z-index: 2;
   opacity: 95%;
@@ -25,7 +27,7 @@ a {
 .navlinks__contact {
   position: fixed;
   height: 1.56vw;
-  top: 25px;
+  top: 3.31vh;
   color: #000;
 
   font-family: "Montserrat", sans-serif;
@@ -65,11 +67,11 @@ a {
 
 .hero__background {
   background-color: #afe9ef;
-  width: 100%;
-  height: 100%;
-  top: 0%;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
   left: 0;
-  position: absolute;
+  position: relative;
 }
 
 // Main Hero Heading
@@ -87,7 +89,7 @@ a {
 .hero__cta {
   left: 6vw;
   position: absolute;
-  width: 11.6vw;
+  width: 9.8vw;
   height: 3.36vw;
   top: 65.5vh;
   background-color: $base-green;
@@ -105,4 +107,115 @@ a {
 #hero__arrow {
   width: 1.75vw;
   margin-left: 0.73vw;
+}
+
+.hero__pic {
+  position: absolute;
+  width: 38.55vw;
+
+  left: 55.8vw;
+  top: 17.7vh;
+}
+
+// How we make an impact Section
+.makeAnImpact {
+  overflow-x: hidden;
+  margin: 0;
+  width: 100vw;
+  height: 579px;
+  position: relative;
+  background-color: #ffeed9;
+}
+.makeAnImpact__Heading {
+  text-align: center;
+  font-family: $gadugi;
+  letter-spacing: 1.7px;
+  color: #494949;
+  font-size: 16.4px;
+  position: relative;
+  top: 6.2vw;
+}
+.makeAnImpact__text {
+  font-family: $helve;
+  text-align: center;
+  width: 41.01vw;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 6.2vw;
+  padding-top: 42px;
+  font-size: 1.95vw;
+  letter-spacing: 1px;
+  color: #124517;
+}
+.makeAnImpact__knowMoreBtn {
+  position: relative;
+  border: none;
+  height: 3.38vw;
+  width: 9.96vw;
+  background-color: $base-green;
+  top: 22.7vw;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  padding-left: 2.47vw;
+  color: #fff;
+  font-size: 1vw;
+  font-family: $sweet-sans-medium;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
+
+  #newsletter__knowMoreBtn--arrow {
+    width: 0.55vw;
+    height: 0.94vw;
+    padding-top: 2.4px;
+    padding-right: 1.17vw;
+  }
+
+  &:focus {
+    outline: 0px;
+  }
+  &:hover {
+    animation: moveknowMoreText 0.4s ease-in-out both alternate;
+    filter: drop shadow(0);
+    box-shadow: 0 4px 8px 0 rgba(0, 202, 155, 0.2),
+      0 6px 20px 0 rgba(1, 190, 146, 0.1);
+  }
+  &:hover > #newsletter__knowMoreBtn--arrow {
+    position: absolute;
+    animation: moveTheArrow 0.3s ease-in-out both alternate;
+  }
+}
+
+@keyframes moveTheArrow {
+  0% {
+    padding-left: 0%;
+  }
+  100% {
+    padding-top: 1%;
+    padding-left: 56%;
+  }
+}
+@keyframes moveknowMoreText {
+  0% {
+    padding-left: 2.47vw;
+  }
+  100% {
+    padding-right: 0;
+  }
+}
+.makeAnImpact__LeftPic,
+.makeAnImpact__RightPic {
+  margin-top: 0;
+  width: 28.4vw;
+  position: relative;
+}
+.makeAnImpact__LeftPic {
+  top: -12%;
+}
+.makeAnImpact__RightPic {
+  left: 66.3%;
+  transform: translate(-80%, 0);
+  top: -13%;
 }
