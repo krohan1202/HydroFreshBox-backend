@@ -73,6 +73,11 @@ function Home() {
                 <img src={RightPic} className="makeAnImpact__RightPic" />
             </div>
             
+            {/* Know about process */}
+            <div className="process">
+                <h1 className="process__Heading">Know about the process of farming</h1>
+                <p className="process__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua elit, sed doutinci, et dolore magna aliqua.</p>
+            </div>
         </>
     )
 }

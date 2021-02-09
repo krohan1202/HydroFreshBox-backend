@@ -13,9 +13,11 @@
 @font-face {
   font-family: sweet-sans-pro-bold;
   src: url("./fonts/SweetSansProBold.otf");
-  font-weight: 700;
 }
-
+@font-face {
+  font-family: tech-sans;
+  src: url("./fonts/Technique\ Sans.otf");
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
