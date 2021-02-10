@@ -7,6 +7,10 @@ import HeroPic from "../../assets/Home/1-Hero Section/Hero Pic.png";
 import LeftPic from "../../assets/Home/2-How we make an impact/Left side Pic.png";
 import RightPic from "../../assets/Home/2-How we make an impact/Right side Pic.png";
 import Arrow from "../../assets/Home/2-How we make an impact/Arrow.png";
+// Know about process of farming
+import BackBigPic from "../../assets/Home/3-Know about process of farming/Back Big Pic.png";
+import RightLine from "../../assets/Home/3-Know about process of farming/Right Line.png";
+import FrontSmallPic from "../../assets/Home/3-Know about process of farming/Front Small Pic.png";
 
 function Home() {
     return (
@@ -15,21 +19,11 @@ function Home() {
                 <nav className="navbar">
                     <p className="nav__logo">LOGO</p>
                     <ul className="navlinks">
-                        <li>
-                            <a className="navlinks__shop" href="#">Shop</a>
-                        </li>
-                        <li>
-                            <a className="navlinks__about" href="#">About</a>
-                        </li>
-                        <li>
-                            <a className="navlinks__pods" href="#">Pods</a>
-                        </li>
-                        <li>
-                            <a className="navlinks__news" href="#">News</a>
-                        </li>
-                        <li>
-                            <a className="navlinks__contact" href="#">Contact</a>
-                        </li>
+                        <li><a className="navlinks__shop" href="#">Shop</a></li>
+                        <li><a className="navlinks__about" href="#">About</a></li>
+                        <li><a className="navlinks__pods" href="#">Pods</a></li>
+                        <li><a className="navlinks__news" href="#">News</a></li>
+                        <li><a className="navlinks__contact" href="#">Contact</a></li>
                     </ul>
                 </nav>
                 <hr className="nav__bottomLine"></hr>
@@ -77,6 +71,14 @@ function Home() {
             <div className="process">
                 <h1 className="process__Heading">Know about the process of farming</h1>
                 <p className="process__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua elit, sed doutinci, et dolore magna aliqua.</p>
+                
+                <a href="#" className="process__button">
+                    <p id="process__button--Learn">Learn more</p>
+                </a>
+
+                <img src={RightLine} className="process__rightLine" />
+                <img src={BackBigPic} className="process__blackBigPic" />
+                <img src={FrontSmallPic} className="process__frontSmallPic" />
             </div>
         </>
     )

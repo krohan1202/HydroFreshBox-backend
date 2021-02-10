@@ -123,7 +123,7 @@ a {
   overflow-x: hidden;
   margin: 0;
   width: 100vw;
-  height: 579px;
+  height: 37.69vw;
   position: relative;
   background-color: #ffeed9;
 }
@@ -223,30 +223,68 @@ a {
 
 // Know about process Section
 .process {
-  // overflow-x: hidden;
+  overflow-x: hidden;
   margin: 0;
   width: 100vw;
   height: 1579px;
   position: relative;
   background-color: #f6fff7;
 }
-.process__Heading {
+.process__Heading,
+.process__text,
+.process__button {
   position: relative;
+  left: 8.5vw;
+  color: $dark-green;
+}
+.process__Heading {
   font-family: $tech-sans;
   font-size: 5.22vw;
   width: 50%;
-  left: 8.5vw;
   font-weight: 400;
   top: 8.8vw;
-  color: $dark-green;
 }
 .process__text {
-  position: relative;
-  left: 8.5vw;
   top: 8vw;
   width: 35%;
   font-family: $helve;
   font-size: 1.22vw;
-  color: $dark-green;
   opacity: 81%;
+}
+.process__button {
+  top: 16.9vw;
+  height: 11.9vw;
+  width: 11.9vw;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $base-green;
+  color: #fff;
+  font-family: $sweet-sans-medium;
+  font-size: 1.78vw;
+}
+#process__button--Learn {
+  width: 5.2vw;
+  line-height: 1.78vw;
+}
+
+.process__rightLine {
+  position: absolute;
+  left: 90.9%;
+  top: 0;
+  width: 9.085vw;
+}
+.process__blackBigPic {
+  top: 15.8vw;
+  width: 23.9vw;
+  position: absolute;
+  left: 67%;
+}
+.process__frontSmallPic {
+  position: absolute;
+  left: 51.5%;
+  top: 34.7vw;
+  width: 20.4vw;
 }
