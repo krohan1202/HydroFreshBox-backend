@@ -11,6 +11,8 @@ import Arrow from "../../assets/Home/2-How we make an impact/Arrow.png";
 import BackBigPic from "../../assets/Home/3-Know about process of farming/Back Big Pic.png";
 import RightLine from "../../assets/Home/3-Know about process of farming/Right Line.png";
 import FrontSmallPic from "../../assets/Home/3-Know about process of farming/Front Small Pic.png";
+// Updated methods
+import Updated__Left from "../../assets/Home/4-Updated methods/Left Side Pic.png";
 
 function Home() {
     return (
@@ -60,7 +62,7 @@ function Home() {
                 <p className="makeAnImpact__Heading">How we make an impact</p>
                 <p className="makeAnImpact__text">Lorem ipsum dolor sit amet, consect etu adipiscing elit. Quisque, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec scelerisque solli lenaria loipsum aute irure dolor.</p>
                 <a className="makeAnImpact__knowMoreBtn" href="/about">
-                    <img id="newsletter__knowMoreBtn--arrow" src={Arrow} alt="->"/> Know More
+                    <img id="makeAnImpact__knowMoreBtn--arrow" src={Arrow} alt="->"/> Know More
                 </a>
 
                 <img src={LeftPic} className="makeAnImpact__LeftPic" />
@@ -79,6 +81,15 @@ function Home() {
                 <img src={RightLine} className="process__rightLine" />
                 <img src={BackBigPic} className="process__blackBigPic" />
                 <img src={FrontSmallPic} className="process__frontSmallPic" />
+
+                {/* Updated methods */}
+                <h1 className="updated__Heading">Updated methods, Healthier produce</h1>
+                <p className="updated__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua elit, sed doutinci.</p>
+
+                <a className="updated__knowMoreBtn" href="/about">
+                    <img id="updated__knowMoreBtn--arrow" src={Arrow} alt="->"/> View news
+                </a>
+                <img src={Updated__Left} className="updated__leftPic" />
             </div>
         </>
     )

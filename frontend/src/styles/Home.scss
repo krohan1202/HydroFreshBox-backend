@@ -70,7 +70,7 @@ a {
 .hero__background {
   background-color: #afe9ef;
   width: 100vw;
-  height: 100vh;
+  height: 49.08vw;
   top: 0;
   left: 0;
   position: relative;
@@ -83,7 +83,7 @@ a {
   font-size: 3.52vw;
   color: #1a1917;
   left: 6vw;
-  top: 31.7vh;
+  top: 15.56vw;
   width: 50%;
   line-height: 4.37vw;
 }
@@ -93,7 +93,7 @@ a {
   position: absolute;
   width: 9.8vw;
   height: 3.36vw;
-  top: 65.5vh;
+  top: 32.15vw;
   background-color: $base-green;
   border: none;
   color: #fff;
@@ -115,7 +115,7 @@ a {
   position: absolute;
   width: 38.55vw;
   left: 55.8vw;
-  top: 17.7vh;
+  top: 8.68vw;
 }
 
 // How we make an impact Section
@@ -149,7 +149,8 @@ a {
   letter-spacing: 1px;
   color: #124517;
 }
-.makeAnImpact__knowMoreBtn {
+.makeAnImpact__knowMoreBtn,
+.updated__knowMoreBtn {
   position: relative;
   border: none;
   height: 3.38vw;
@@ -167,7 +168,8 @@ a {
   cursor: pointer;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
 
-  #newsletter__knowMoreBtn--arrow {
+  #makeAnImpact__knowMoreBtn--arrow,
+  #updated__knowMoreBtn--arrow {
     width: 0.55vw;
     height: 0.94vw;
     padding-top: 2.4px;
@@ -183,7 +185,8 @@ a {
     box-shadow: 0 4px 8px 0 rgba(0, 202, 155, 0.2),
       0 6px 20px 0 rgba(1, 190, 146, 0.1);
   }
-  &:hover > #newsletter__knowMoreBtn--arrow {
+  &:hover > #makeAnImpact__knowMoreBtn--arrow,
+  &:hover > #updated__knowMoreBtn--arrow {
     position: absolute;
     animation: moveTheArrow 0.3s ease-in-out both alternate;
   }
@@ -226,7 +229,7 @@ a {
   overflow-x: hidden;
   margin: 0;
   width: 100vw;
-  height: 1579px;
+  height: 1485px;
   position: relative;
   background-color: #f6fff7;
 }
@@ -287,4 +290,41 @@ a {
   left: 51.5%;
   top: 34.7vw;
   width: 20.4vw;
+}
+
+// Updated methods
+.updated__Heading {
+  position: relative;
+  text-align: right;
+  top: 29vw;
+  left: 60.7%;
+  width: 29.29vw;
+  font-family: $tech-sans;
+  font-size: 3.12vw;
+  font-weight: 400;
+  color: $dark-green;
+  line-height: 3.51vw;
+}
+.updated__text {
+  position: relative;
+  text-align: right;
+  top: 28.7vw;
+  left: 57.8%;
+  width: 31.9vw;
+  font-family: $helve;
+  font-size: 1.2vw;
+  color: $dark-green;
+  opacity: 81%;
+}
+.updated__knowMoreBtn {
+  top: 30.1vw;
+  left: 83.8vw;
+  width: 9vw;
+  height: 3vw;
+}
+.updated__leftPic {
+  position: relative;
+  left: 8.5vw;
+  width: 33.1vw;
+  top: 10vw;
 }
