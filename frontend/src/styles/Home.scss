@@ -229,7 +229,7 @@ a {
   overflow-x: hidden;
   margin: 0;
   width: 100vw;
-  height: 1485px;
+  height: 96.67vw;
   position: relative;
   background-color: #f6fff7;
 }
@@ -327,4 +327,45 @@ a {
   left: 8.5vw;
   width: 33.1vw;
   top: 10vw;
+}
+
+// What makes us unique
+.makesUsUnique {
+  position: relative;
+  width: 100vw;
+  height: 34.76vw;
+  background-color: #e8ffea;
+}
+.makesUsUnique__Heading {
+  text-align: center;
+  font-family: $gadugi;
+  letter-spacing: 1.7px;
+  color: #494949;
+  font-size: 16px;
+  position: relative;
+  top: 5.5vw;
+}
+.makesUsUnique__middleCard {
+  position: relative;
+  left: 39.8vw;
+  top: 9.23vw;
+}
+.makesUsUnique__middleCard--icon {
+  width: 3.46vw;
+}
+.makesUsUnique__middleCard--Heading {
+  font-family: $tech-sans;
+  font-size: 2.25vw;
+  color: $dark-green;
+  margin-top: 2.47vw;
+  width: 20.96vw;
+}
+.makeUsUnique__middleCard--text {
+  font-family: $helve;
+  font-size: 1.39vw;
+  color: #679d76;
+  width: 20.96vw;
+  position: relative;
+  top: 0px;
+  margin-top: -0.58vw;
 }
