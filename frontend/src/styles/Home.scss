@@ -398,3 +398,16 @@ a {
 .makesUsUnique__rightLine {
   left: 65.8vw;
 }
+
+// Footer
+.footer__bg {
+  position: absolute;
+  width: 100vw;
+  height: 35.67vw;
+  z-index: -1;
+}
+.footer__Heading {
+  position: relative;
+  font-family: "Fraunces", serif;
+  font-style: normal;
+}

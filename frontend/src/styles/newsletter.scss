@@ -1,9 +1,11 @@
 $base-green: #00ac85;
 $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
 
+* {
+  overflow-x: hidden;
+}
 .newsletterSection {
   background-color: #f6fff7;
-  margin-top: 90%;
 }
 
 .newsletter__newsletterHeading {
@@ -13,13 +15,13 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
   font-size: 13px;
   letter-spacing: 0.32em;
   color: #303030;
-  padding-top: 98px;
+  padding-top: 6.38vw;
 }
 
 .newsletter__firstHeading {
   text-align: center;
   font-size: 3.38vw;
-  margin-top: 40px;
+  margin-top: 2.6vw;
 }
 
 .newsletter__firstHeading--subscribe {
@@ -33,7 +35,7 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
 }
 
 .newsletter__firstHeading--toGet {
-  margin-left: 15px;
+  margin-left: 0.97vw;
 }
 
 .newsletter__secondHeading--latestUpdates {
@@ -46,16 +48,16 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 61px;
-  padding-bottom: 143px;
+  margin-top: 3.97vw;
+  padding-bottom: 9.3vw;
 }
 .newsletter__emailBox {
-  height: 48px;
-  width: 330px;
+  height: 3.12vw;
+  width: 21.48vw;
   border: 1px solid $base-green;
   font-family: $sweet-sans-medium;
-  padding-left: 31px;
-  font-size: 15px;
+  padding-left: 2.01vw;
+  font-size: 0.97vw;
 
   &:focus {
     outline: 0.5px ridge $base-green;
@@ -64,21 +66,21 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
 
 .newsletter__subscribeBtn {
   border: none;
-  height: 52px;
-  width: 180px;
+  height: 3.38vw;
+  width: 11.71vw;
   background-color: $base-green;
-  margin-left: 50px;
+  margin-left: 3.25vw;
   color: #fff;
-  font-size: 15px;
+  font-size: 0.97vw;
   font-family: $sweet-sans-medium;
   cursor: pointer;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.12);
 
   #newsletter__subscribeBtn--arrow {
-    width: 8.5px;
-    height: 14.5px;
-    padding-top: 2.4px;
-    padding-right: 13px;
+    width: 0.55vw;
+    height: 0.94vw;
+    padding-top: 0.15vw;
+    padding-right: 0.84vw;
   }
 
   &:focus {
@@ -100,7 +102,7 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
     padding-left: 0%;
   }
   100% {
-    padding-top: 4.4px;
+    padding-top: 0.28vw;
     padding-left: 6%;
   }
 }
@@ -110,7 +112,7 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
     text-align: center;
   }
   100% {
-    padding-right: 10px;
+    padding-right: 0.65vw;
   }
 }
 

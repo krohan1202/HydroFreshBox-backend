@@ -1,10 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital@0;1&family=Montserrat&display=swap");
 @font-face {
   font-family: Gadugi;
   src: url("./fonts/gadugi-normal.ttf") format("truetype");
   font-weight: normal;
 }
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital@1&display=swap");
 @font-face {
   font-family: sweet-sans-pro-medium;
   src: url("./fonts/SweetSansProMedium.otf");
