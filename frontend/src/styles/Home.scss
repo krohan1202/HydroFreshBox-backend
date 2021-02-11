@@ -345,27 +345,56 @@ a {
   position: relative;
   top: 5.5vw;
 }
-.makesUsUnique__middleCard {
-  position: relative;
-  left: 39.8vw;
-  top: 9.23vw;
+.makesUsUnique__leftCard,
+.makesUsUnique__middleCard,
+.makesUsUnique__rightCard {
+  position: absolute;
+  left: 39.7vw;
+  top: 11vw;
+}
+.makesUsUnique__leftCard {
+  left: 7.2vw;
+}
+.makesUsUnique__rightCard {
+  left: 71.3vw;
+}
+.makesUsUnique__leftCard--icon,
+.makesUsUnique__rightCard--icon {
+  margin-top: -0.19vw;
+  width: 2.8vw;
 }
 .makesUsUnique__middleCard--icon {
   width: 3.46vw;
 }
-.makesUsUnique__middleCard--Heading {
+.makesUsUnique__leftCard--Heading,
+.makesUsUnique__middleCard--Heading,
+.makesUsUnique__rightCard--Heading {
   font-family: $tech-sans;
   font-size: 2.25vw;
   color: $dark-green;
   margin-top: 2.47vw;
-  width: 20.96vw;
+  width: 22.2vw;
 }
-.makeUsUnique__middleCard--text {
+.makesUsUnique__leftCard--text,
+.makesUsUnique__middleCard--text,
+.makesUsUnique__rightCard--text {
   font-family: $helve;
-  font-size: 1.39vw;
+  font-size: 1.37vw;
   color: #679d76;
-  width: 20.96vw;
+  width: 22.6vw;
   position: relative;
-  top: 0px;
   margin-top: -0.58vw;
+}
+.makesUsUnique__leftLine,
+.makesUsUnique__rightLine {
+  border-left: 1.3px solid black;
+  height: 13.02vw;
+  position: absolute;
+  top: 16.35vw;
+}
+.makesUsUnique__leftLine {
+  left: 34.2vw;
+}
+.makesUsUnique__rightLine {
+  left: 65.8vw;
 }
