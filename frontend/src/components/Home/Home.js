@@ -1,3 +1,5 @@
+import React, {useState} from "react";
+import $ from "jquery";
 import "../../styles/Home.scss";
 import Newsletter from "./Newsletter";
 
@@ -17,8 +19,18 @@ import Updated__Left from "../../assets/Home/4-Updated methods/Left Side Pic.png
 import FooterBg from "../../assets/Home/6-Footer/Bg.png";
 
 function Home() {
+
+    const [cursorX, setCursorX] = useState();
+    const [cursorY, setCursorY] = useState();
+
+    window.addEventListener("mousemove", (e) => {
+        setCursorX(e.pageX-10);
+        setCursorY(e.pageY-10);
+    })
+
     return (
         <>
+            <div className="cursor" style={{left:cursorX +'px', top:cursorY+'px'}}></div>
             <div>
                 <nav className="navbar">
                     <p className="nav__logo">LOGO</p>
@@ -77,7 +89,7 @@ function Home() {
                 <p className="process__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua elit, sed doutinci, et dolore magna aliqua.</p>
                 
                 <a href="#" className="process__button">
-                    <p id="process__button--Learn">Learn more</p>
+                    <p id="process__button--LearnMore">Learn more</p>
                 </a>
 
                 <img src={RightLine} className="process__rightLine" />

@@ -5,9 +5,12 @@
   font-weight: normal;
 }
 @font-face {
+  font-family: sweet-sans-pro-reg;
+  src: url("./fonts/SweetSansProRegular.otf");
+}
+@font-face {
   font-family: sweet-sans-pro-medium;
   src: url("./fonts/SweetSansProMedium.otf");
-  font-weight: normal;
 }
 @font-face {
   font-family: sweet-sans-pro-bold;

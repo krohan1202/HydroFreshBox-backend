@@ -1,5 +1,6 @@
 $base-green: #00ac85;
 $dark-green: #003f12;
+$sweet-sans-reg: "sweet-sans-pro-reg", sans-serif;
 $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
 $sweet-sans-bold: "sweet-sans-pro-bold", sans-serif;
 $gadugi: "Gadugi", serif;
@@ -12,13 +13,35 @@ li {
 a {
   text-decoration: none;
 }
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid $base-green;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnimation 1.5s infinite alternate;
+  pointer-events: none;
+  z-index: 5;
+}
+
+@keyframes cursorAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+
 .navbar {
   position: fixed;
   width: 100vw;
-  height: 66px;
+  height: 4.29vw;
   left: 0;
   top: 0;
-  background-color: #afe9ef;
   z-index: 2;
   opacity: 95%;
 }
@@ -29,7 +52,7 @@ a {
 .navlinks__contact {
   position: fixed;
   height: 1.56vw;
-  top: 3.31vh;
+  top: 1.62vw;
   color: #000;
 
   font-family: "Montserrat", sans-serif;
@@ -37,6 +60,27 @@ a {
   font-weight: normal;
   font-size: 1.02vw;
   cursor: pointer;
+
+  &:hover {
+    -webkit-mask-image: linear-gradient(
+      -75deg,
+      $base-green,
+      #000 50%,
+      rgba(129, 39, 39, 0.6) 70%
+    );
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+
+    @-webkit-keyframes shine {
+      from {
+        -webkit-mask-position: 150%;
+      }
+
+      to {
+        -webkit-mask-position: -50%;
+      }
+    }
+  }
 }
 
 .navlinks__shop {
@@ -55,15 +99,13 @@ a {
   left: 90vw;
 }
 .nav__bottomLine {
-  top: 66px;
+  top: 4.29vw;
   margin-top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  left: 3.37vw;
+  position: fixed;
   border: none;
   border-top: 1px solid #000;
-  width: 93%;
+  width: 93.5%;
   z-index: 2;
 }
 
@@ -87,7 +129,10 @@ a {
   width: 50%;
   line-height: 4.37vw;
 }
-
+#hero__arrow {
+  width: 1.75vw;
+  margin-left: 0.73vw;
+}
 .hero__cta {
   left: 6vw;
   position: absolute;
@@ -105,10 +150,23 @@ a {
   padding-left: 1.96vw;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+
+  &:hover {
+    #hero__arrow {
+      animation: hoverCta 0.5s ease-in-out;
+    }
+  }
 }
-#hero__arrow {
-  width: 1.75vw;
-  margin-left: 0.73vw;
+@keyframes hoverCta {
+  0% {
+    margin: 0 0 0 0.73vw;
+  }
+  50% {
+    margin: 0 0 3px 0.85vw;
+  }
+  100% {
+    margin: 0 0 0 0.73vw;
+  }
 }
 
 .hero__pic {
@@ -265,8 +323,14 @@ a {
   color: #fff;
   font-family: $sweet-sans-medium;
   font-size: 1.78vw;
+
+  &:hover {
+    #process__button--LearnMore {
+      opacity: 0;
+    }
+  }
 }
-#process__button--Learn {
+#process__button--LearnMore {
   width: 5.2vw;
   line-height: 1.78vw;
 }
@@ -440,8 +504,8 @@ a {
 .footer__NeedHelpPart--links,
 .footer__FollowUsPart--links {
   text-align: right;
-  font-family: $sweet-sans-medium;
-  font-size: 1vw;
+  font-family: $sweet-sans-reg;
+  font-size: 1.02vw;
   margin: 0.48vw 0;
 }
 .footer__NavigatePart--aboutUs,
@@ -472,7 +536,7 @@ a {
 .footer__privacyPolicy {
   position: absolute;
   top: 287vw;
-  font-family: $sweet-sans-medium;
+  font-family: $sweet-sans-reg;
   font-size: 0.87vw;
   color: #686868;
 }
