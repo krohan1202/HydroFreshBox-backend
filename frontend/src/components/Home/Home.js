@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import $ from "jquery";
 import "../../styles/Home.scss";
 import Newsletter from "./Newsletter";
 
@@ -186,9 +185,9 @@ function Home() {
                     </ul>
                 </span>
                 <hr className="footer__horizontalLine"></hr>
-                <p className="footer__termsAndConditions">Terms & Conditions</p>
+                <a href="#"><p className="footer__termsAndConditions">Terms & Conditions</p></a>
                 <p className="footer__rightsReserved">All rights reserved — 2021 © Hydro Fresh Box</p>
-                <p className="footer__privacyPolicy">Privacy Policy</p>
+                <a href="#"><p className="footer__privacyPolicy">Privacy Policy</p></a>
             </div>
         </>
     )
