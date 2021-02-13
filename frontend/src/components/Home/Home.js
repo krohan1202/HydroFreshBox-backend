@@ -111,7 +111,7 @@ function Home() {
                 <h1 className="updated__Heading">Updated methods, Healthier produce</h1>
                 <p className="updated__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua elit, sed doutinci.</p>
 
-                <a className="updated__knowMoreBtn" href="/about">
+                <a className="updated__knowMoreBtn" href="/news">
                     <img id="updated__knowMoreBtn--arrow" src={Arrow} alt="->"/> View news
                 </a>
                 <img src={Updated__Left} className="updated__leftPic" />

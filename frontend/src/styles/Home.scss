@@ -148,17 +148,25 @@ a {
   .svgLine {
     fill-opacity: 0;
     stroke-width: 8px;
+    stroke-opacity: 0;
     stroke-dashoffset: 0;
     stroke-dasharray: 1000;
     animation: svgLineAnimation 2s ease-in-out;
     animation-delay: 1s;
+    animation-fill-mode: forwards;
   }
   @keyframes svgLineAnimation {
     0% {
       stroke-dashoffset: 1000;
+      stroke-opacity: 0;
+    }
+    1% {
+      stroke-dashoffset: 1000;
+      stroke-opacity: 1;
     }
     100% {
       stroke-dashoffset: 0;
+      stroke-opacity: 1;
     }
   }
 }
