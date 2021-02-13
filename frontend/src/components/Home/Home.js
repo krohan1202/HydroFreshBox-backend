@@ -89,7 +89,7 @@ function Home() {
             
             {/* Know about process */}
             <div className="process">
-                <h1 className="process__Heading">Know about the process of farming</h1>
+                <h1 data-scroll data-scroll-delay="0.1" data-scroll-speed="1" className="c-lerp-block_title process__Heading">Know about the process of farming</h1>
                 <p className="process__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua elit, sed doutinci, et dolore magna aliqua.</p>
                 
                 <a href="#" className="process__button">
@@ -98,7 +98,7 @@ function Home() {
 
                 <img src={RightLine} className="process__rightLine" />
                 <img src={BackBigPic} className="process__blackBigPic" />
-                <img data-scroll data-scroll-speed="2"
+                <img data-scroll data-scroll-delay="0.05" data-scroll-speed="2"
         data-scroll-position="bottom" src={FrontSmallPic} className="process__frontSmallPic" />
 
                 {/* Updated methods */}
