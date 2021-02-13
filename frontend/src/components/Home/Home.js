@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useEffect} from "react";
 import locomotiveScroll from "locomotive-scroll";
 import "../../styles/Home.scss";
 import "../../styles/base_loco.css";
@@ -14,6 +14,7 @@ import Arrow from "../../assets/Home/2-How we make an impact/Arrow.png";
 import BackBigPic from "../../assets/Home/3-Know about process of farming/Back Big Pic.png";
 import RightLine from "../../assets/Home/3-Know about process of farming/Right Line.png";
 import FrontSmallPic from "../../assets/Home/3-Know about process of farming/Front Small Pic.png";
+import ButtonHoverArrow from "../../assets/Home/3-Know about process of farming/HoverArrow.png";
 // Updated methods assets
 import Updated__Left from "../../assets/Home/4-Updated methods/Left Side Pic.png";
 //Footer assets
@@ -36,7 +37,7 @@ function Home() {
         <>
             <div className="scroll" ref={scrollRef}>
             <div>
-                <nav data-scroll-sticky id="navbar" style={{position: 'fixed'}}>
+                <nav data-scroll-sticky id="navbar">
                     <p className="nav__logo">LOGO</p>
                     <ul className="navlinks">
                         <li><a className="navlinks__shop" href="/shop">Shop</a></li>
@@ -74,6 +75,10 @@ function Home() {
             
 
             <img src={HeroPic} className="hero__pic"/>
+            <svg id="hero__pic--orangeLine" viewBox="0 0 735 247" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path className="svgLine" d="M49.4997 197C30.9225 207.329 18.8496 213.564 6.97569 228.068C-4.89819 242.572 26.1059 242.902 43.0921 241.253C111.505 230.989 335.326 175.101 683.305 33.6585C687.687 31.6202 691.107 30.0903 692.27 29.5802C700.252 27.5104 718.194 20.7536 726.103 10.2842C734.012 -0.185244 672.294 6.84977 636 11.5" stroke="#FF640D" stroke-width="8"/>
+            </svg>
+
             
             {/* How we make an impact / About Us Section */}
             <div className="makeAnImpact">
@@ -94,6 +99,7 @@ function Home() {
                 
                 <a href="#" className="process__button">
                     <p id="process__button--LearnMore">Learn more</p>
+                    <img src={ButtonHoverArrow} className="process__button--buttonHoverArrow" />
                 </a>
 
                 <img src={RightLine} className="process__rightLine" />

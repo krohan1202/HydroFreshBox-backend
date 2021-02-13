@@ -139,7 +139,29 @@ a {
   left: 55.8vw;
   top: 8.68vw;
 }
+#hero__pic--orangeLine {
+  position: absolute;
+  width: 38.55vw;
+  left: 55.8vw;
+  top: 20vw;
 
+  .svgLine {
+    fill-opacity: 0;
+    stroke-width: 8px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1000;
+    animation: svgLineAnimation 2s ease-in-out;
+    animation-delay: 1s;
+  }
+  @keyframes svgLineAnimation {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+}
 // How we make an impact Section
 .makeAnImpact {
   overflow-x: hidden;
@@ -274,6 +296,12 @@ a {
   font-size: 1.22vw;
   opacity: 81%;
 }
+.process__button--buttonHoverArrow {
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  opacity: 0;
+}
 .process__button {
   top: 16.9vw;
   height: 11.9vw;
@@ -289,10 +317,13 @@ a {
   font-size: 1.78vw;
 
   &:hover {
-    cursor: url(../assets/Home/HoverArrow.png), default;
     #process__button--LearnMore {
       transition: 0.2s ease;
       opacity: 0;
+    }
+    .process__button--buttonHoverArrow {
+      opacity: 1;
+      transition: 0.3s ease;
     }
     .cursor {
       visibility: hidden;
