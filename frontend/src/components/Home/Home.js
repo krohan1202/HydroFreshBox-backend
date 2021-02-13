@@ -1,5 +1,7 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
+import locomotiveScroll from "locomotive-scroll";
 import "../../styles/Home.scss";
+import "../../styles/base_loco.css";
 import Newsletter from "./Newsletter";
 
 //Hero assets
@@ -19,19 +21,22 @@ import FooterBg from "../../assets/Home/6-Footer/Bg.png";
 
 function Home() {
 
-    const [cursorX, setCursorX] = useState();
-    const [cursorY, setCursorY] = useState();
+    const scrollRef = React.createRef();
 
-    window.addEventListener("mousemove", (e) => {
-        setCursorX(e.pageX-10);
-        setCursorY(e.pageY-10);
-    })
+    useEffect(() => {
+        const scroll = new locomotiveScroll({
+        el: scrollRef.current,
+        smooth: true,
+        multiplier: 1,
+        });
+    });
 
     return (
+        
         <>
-            <div className="cursor" style={{left:cursorX +'px', top:cursorY+'px'}}></div>
+            <div className="scroll" ref={scrollRef}>
             <div>
-                <nav className="navbar">
+                <nav data-scroll-sticky id="navbar" style={{position: 'fixed'}}>
                     <p className="nav__logo">LOGO</p>
                     <ul className="navlinks">
                         <li><a className="navlinks__shop" href="/shop">Shop</a></li>
@@ -93,7 +98,8 @@ function Home() {
 
                 <img src={RightLine} className="process__rightLine" />
                 <img src={BackBigPic} className="process__blackBigPic" />
-                <img src={FrontSmallPic} className="process__frontSmallPic" />
+                <img data-scroll data-scroll-speed="2"
+        data-scroll-position="bottom" src={FrontSmallPic} className="process__frontSmallPic" />
 
                 {/* Updated methods */}
                 <h1 className="updated__Heading">Updated methods, Healthier produce</h1>
@@ -188,6 +194,7 @@ function Home() {
                 <a href="#"><p className="footer__termsAndConditions">Terms & Conditions</p></a>
                 <p className="footer__rightsReserved">All rights reserved — 2021 © Hydro Fresh Box</p>
                 <a href="#"><p className="footer__privacyPolicy">Privacy Policy</p></a>
+            </div>
             </div>
         </>
     )

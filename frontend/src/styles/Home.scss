@@ -14,29 +14,7 @@ a {
   text-decoration: none;
 }
 
-.cursor {
-  width: 20px;
-  height: 20px;
-  border: 1px solid $base-green;
-  border-radius: 50%;
-  position: absolute;
-  transition-duration: 130ms;
-  transition-timing-function: ease-out;
-  animation: cursorAnimation 1.3s infinite alternate;
-  pointer-events: none;
-  z-index: 5;
-}
-
-@keyframes cursorAnimation {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.7);
-  }
-}
-
-.navbar {
+#navbar {
   position: fixed;
   width: 100vw;
   height: 4.29vw;
@@ -341,7 +319,7 @@ a {
 .process__frontSmallPic {
   position: absolute;
   left: 51.5%;
-  top: 34.7vw;
+  top: 9vw;
   width: 20.4vw;
 }
 
