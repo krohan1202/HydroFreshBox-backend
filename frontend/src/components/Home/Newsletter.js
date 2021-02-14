@@ -65,7 +65,8 @@ function Newsletter() {
         <div className="scale-in-top newsletter__successMessage">
           <div className="newsletter__successMsg--closeBtn" onClick={handlesuccessMsg}>
           </div>
-          <p className="newsletter__successMessage--text">Congrats! You are now subscribed. 🎉</p>
+          <img src={successPic} className="newsletter__successMsg--Pic" />
+          <p className="newsletter__successMsg--text">Congrats! You are now subscribed. 🎉</p>
         </div>
       </div>
     );

@@ -176,8 +176,14 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
     opacity: 1;
   }
 }
-
-.newsletter__successMessage--text {
+.newsletter__successMsg--Pic {
+  width: 42.31vw;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: -1vw;
+}
+.newsletter__successMsg--text {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6vw;
   color: $base-green;
@@ -195,6 +201,7 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
   border-radius: 50%;
   left: 91%;
   top: 5%;
+  z-index: 1;
 
   &::before,
   &::after {
