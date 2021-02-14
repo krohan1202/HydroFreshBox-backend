@@ -125,8 +125,9 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  padding-right: 420px;
-  top: 55.3%;
+  padding-right: 27.34vw;
+  margin-top: 5vh;
+  top: 243.5vw;
   font-size: 0.91vw;
   font-family: $sweet-sans-medium;
 }
@@ -135,22 +136,22 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
 .newsletter__successMessage--background {
   background-color: rgb(207, 207, 207);
   opacity: 0.2;
-  top: 0%;
+  top: 218.1vw;
   left: 0%;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 36.37vw;
   position: fixed;
 }
 
 .newsletter__successMessage {
   background-color: #fffdf2;
   width: 45vw;
-  height: 68vh;
+  height: 33.38vw;
   position: fixed;
-  top: 15%;
+  top: 219.5vw;
   left: 27%;
   transform: translate(-50%, -50%);
-  border-radius: 40px;
+  border-radius: 2.6vw;
   box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
 }
 .scale-in-top {
@@ -187,8 +188,8 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
 
 .newsletter__successMsg--closeBtn {
   position: relative;
-  width: 25px;
-  height: 25px;
+  width: 1.62vw;
+  height: 1.62vw;
   border: 2px solid #eef5df;
   background-color: #ff5248;
   border-radius: 50%;
@@ -198,10 +199,10 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
   &::before,
   &::after {
     position: absolute;
-    top: 11px;
-    left: 5px;
-    width: 16px;
-    height: 3px;
+    top: 0.71vw;
+    left: 0.32vw;
+    width: 1.04vw;
+    height: 0.19vw;
     content: "";
     background-color: #eef5df;
     display: none;

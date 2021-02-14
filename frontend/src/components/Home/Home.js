@@ -18,7 +18,7 @@ import ButtonHoverArrow from "../../assets/Home/3-Know about process of farming/
 // Updated methods assets
 import Updated__Left from "../../assets/Home/4-Updated methods/Left Side Pic.png";
 //Footer assets
-import FooterBg from "../../assets/Home/6-Footer/Bg.png";
+import FooterBg from "../../assets/Home/7-Footer/Bg.png";
 
 function Home() {
 

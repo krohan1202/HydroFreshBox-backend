@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import $ from "jquery";
 import "../../styles/Newsletter.scss";
-import Arrow from "../../assets/Home/2-How we make an impact/Arrow.png";
 import { newsletter } from "../../apiCalls/newsletterApi";
+//Assets
+import Arrow from "../../assets/Home/2-How we make an impact/Arrow.png";
+import successPic from "../../assets/Home/6-Newsletter/Success Pic.png";
 
 function Newsletter() {
 
@@ -71,9 +73,9 @@ function Newsletter() {
 
   const errorMessage = () => {
     return (
-      <div className="newsletter__errMessage" style={{ display: values.error ? "" : "none" }} >
+      <span className="newsletter__errMessage" style={{ display: values.error ? "" : "none" }} >
         Oops! {error}
-      </div>
+      </span>
     );
   };
 

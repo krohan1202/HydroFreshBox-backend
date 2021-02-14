@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from './components/Home/Home';
+import Newsletter from "./components/Home/Newsletter";
 
 
 function App() {
