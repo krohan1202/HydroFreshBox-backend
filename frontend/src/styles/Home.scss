@@ -273,7 +273,9 @@ a {
   transform: translate(-80%, 0);
   top: -4.5vw;
 }
-
+.makeAnImpact__MobilePic {
+  visibility: hidden;
+}
 // Know about process Section
 .process {
   overflow-x: hidden;
@@ -659,23 +661,24 @@ a {
 
   // How we make an impact Section
   .makeAnImpact {
-    height: 154.69vw;
+    height: 156vw;
   }
   .makeAnImpact__Heading {
-    top: 12vw;
+    top: 11vw;
   }
   .makeAnImpact__text {
     width: 66.01vw;
-    top: 15vw;
-    font-size: 5.2vw;
+    top: 13.5vw;
+    font-size: 5vw;
   }
   .makeAnImpact__knowMoreBtn,
   .updated__knowMoreBtn {
     width: 35.8vw;
-    height: 12.8vw;
-    top: 80.3vw;
+    height: 11.9vw;
+    top: 77.7vw;
     padding-left: 5.9vw;
     font-size: 4vw;
+    z-index: 1;
 
     #makeAnImpact__knowMoreBtn--arrow,
     #updated__knowMoreBtn--arrow {
@@ -697,6 +700,138 @@ a {
   }
   .makeAnImpact__LeftPic,
   .makeAnImpact__RightPic {
+    visibility: hidden;
+  }
+  .makeAnImpact__MobilePic {
+    visibility: visible;
+    position: absolute;
+    top: 106.5vw;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+  }
+  // Know about process Section
+  .process {
+    height: 340vw;
+  }
+  .process__Heading,
+  .process__text,
+  .process__button {
+    position: relative;
+    left: 8.5vw;
+    color: $dark-green;
+  }
+  .process__Heading {
+    font-size: 8.3vw;
+    width: 75%;
+    top: 18.7vw;
+  }
+  .process__text {
+    top: 22vw;
+    width: 75%;
+    font-size: 4.4vw;
+  }
+  .process__button--buttonHoverArrow {
+    visibility: hidden;
+  }
+  .process__button {
+    top: 31vw;
+    height: 36vw;
+    width: 36vw;
+    font-size: 5.88vw;
+  }
+  #process__button--LearnMore {
+    width: 19.2vw;
+    line-height: 5.3vw;
+    color: #fff;
+    font-family: $sweet-sans-reg;
+  }
+
+  .process__rightLine {
+    visibility: hidden;
+  }
+  .process__blackBigPic {
+    top: 140vw;
+    width: 57.4vw;
+    left: 36%;
+  }
+  .process__frontSmallPic {
+    left: 6%;
+    top: 187vw;
+    width: 47.4vw;
+  }
+
+  // Updated methods
+  .updated__Heading {
+    top: 144.8vw;
+    left: 17%;
+    width: 75vw;
+    font-size: 8.8vw;
+    line-height: 10vw;
+  }
+  .updated__text {
+    top: 145.3vw;
+    left: 21.8%;
+    width: 69.9vw;
+    font-size: 4.2vw;
+  }
+  .updated__knowMoreBtn {
+    top: 150.5vw;
+    left: 68.2vw;
+    width: 37vw;
+    height: 12.9vw;
+    padding-left: 9.3vw;
+  }
+  .updated__leftPic {
+    visibility: hidden;
+  }
+  // What makes us unique
+  .makesUsUnique {
+    width: 100vw;
+    height: 235vw;
+  }
+  .makesUsUnique__Heading {
+    top: 12.5vw;
+  }
+  .makesUsUnique__leftCard,
+  .makesUsUnique__middleCard,
+  .makesUsUnique__rightCard {
+    left: 12vw;
+  }
+  .makesUsUnique__leftCard {
+    top: 37vw;
+  }
+  .makesUsUnique__middleCard {
+    top: 101vw;
+  }
+  .makesUsUnique__rightCard {
+    top: 168vw;
+  }
+  .makesUsUnique__leftCard--icon,
+  .makesUsUnique__rightCard--icon {
+    margin-top: -0.19vw;
+    width: 11vw;
+  }
+  .makesUsUnique__middleCard--icon {
+    width: 14.3vw;
+    margin-bottom: 6px;
+  }
+  .makesUsUnique__leftCard--Heading,
+  .makesUsUnique__middleCard--Heading,
+  .makesUsUnique__rightCard--Heading {
+    font-size: 7.6vw;
+    margin-top: 4.4vw;
+    width: 77vw;
+  }
+  .makesUsUnique__leftCard--text,
+  .makesUsUnique__middleCard--text,
+  .makesUsUnique__rightCard--text {
+    font-size: 4.6vw;
+    width: 77vw;
+    margin-top: -2.58vw;
+  }
+  .makesUsUnique__leftLine,
+  .makesUsUnique__rightLine {
     visibility: hidden;
   }
 }

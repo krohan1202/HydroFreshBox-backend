@@ -10,6 +10,8 @@ import HeroPic from "../../assets/Home/1-Hero Section/Hero Pic.png";
 import LeftPic from "../../assets/Home/2-How we make an impact/Left side Pic.png";
 import RightPic from "../../assets/Home/2-How we make an impact/Right side Pic.png";
 import Arrow from "../../assets/Home/2-How we make an impact/Arrow.png";
+//How we make an impact MOBILE assets
+import makeAnImpactMobilePic from "../../assets/Home/2-How we make an impact/makeAnImpact Mobile Pic.png";
 // Know about process of farming assets
 import BackBigPic from "../../assets/Home/3-Know about process of farming/Back Big Pic.png";
 import RightLine from "../../assets/Home/3-Know about process of farming/Right Line.png";
@@ -90,6 +92,7 @@ function Home() {
 
                 <img src={LeftPic} className="makeAnImpact__LeftPic" />
                 <img src={RightPic} className="makeAnImpact__RightPic" />
+                <img src={makeAnImpactMobilePic} className="makeAnImpact__MobilePic" />
             </div>
             
             {/* Know about process */}
