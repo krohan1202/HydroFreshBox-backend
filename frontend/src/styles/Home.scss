@@ -834,4 +834,61 @@ a {
   .makesUsUnique__rightLine {
     visibility: hidden;
   }
+  // Footer
+  .footer__bg {
+    height: 112.67vw;
+  }
+  .footer__Heading {
+    visibility: hidden;
+  }
+  .footer__NavigatePart {
+    left: 58.8vw;
+    top: 1063.45vw;
+  }
+  .footer__NeedHelpPart {
+    left: 46.3vw;
+    top: 1105vw;
+  }
+  .footer__FollowUsPart {
+    left: 1.5vw;
+    top: 1118.4vw;
+  }
+  .footer__NavigatePart--Heading,
+  .footer__NeedHelpPart--Heading,
+  .footer__FollowUsPart--Heading {
+    font-family: $sweet-sans-reg;
+    font-size: 4.42vw;
+    margin-bottom: 2.31vw;
+  }
+  .footer__NavigatePart--links,
+  .footer__NeedHelpPart--links,
+  .footer__FollowUsPart--links {
+    font-family: $sweet-sans-reg;
+    font-size: 3.85vw;
+    margin: 1.7vw 0;
+  }
+  .footer__FollowUsPart--links {
+    text-align: left;
+  }
+
+  .footer__horizontalLine {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: none;
+    border-top: 1.4px solid $base-green;
+    width: 83.5vw;
+    top: 1153vw;
+  }
+  .footer__termsAndConditions {
+    visibility: hidden;
+  }
+  .footer__rightsReserved {
+    width: 61vw;
+    top: 1156.5vw;
+    font-size: 2.73vw;
+  }
+  .footer__privacyPolicy {
+    visibility: hidden;
+  }
 }
