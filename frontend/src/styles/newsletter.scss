@@ -87,35 +87,7 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
   &:focus {
     outline: 0px;
   }
-  // &:hover {
-  //   animation: moveText 0.1s ease-out both alternate;
-  //   box-shadow: 0 4px 8px 0 rgba(0, 172, 133, 0.2),
-  //     0 6px 20px 0 rgba(0, 172, 133, 0.29);
-  // }
-  // &:hover > #newsletter__subscribeBtn--arrow {
-  //   position: absolute;
-  //   animation: moveArrow 0.1s ease-out both alternate;
-  // }
 }
-
-// @keyframes moveArrow {
-//   0% {
-//     padding-left: 0%;
-//   }
-//   100% {
-//     padding-top: 0.28vw;
-//     padding-left: 6%;
-//   }
-// }
-
-// @keyframes moveText {
-//   0% {
-//     text-align: center;
-//   }
-//   100% {
-//     padding-right: 0.65vw;
-//   }
-// }
 
 // Error Message
 .newsletter__errMessage {
@@ -285,7 +257,7 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
   .newsletter__successMessage--background {
     top: 0vw;
     left: 0%;
-    height: 258.37vw;
+    height: 100vh;
     z-index: 1;
   }
 
@@ -293,8 +265,11 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
     z-index: 1;
     width: 85vw;
     height: 106vw;
-    top: 65vw;
-    left: 7.7%;
+    top: 50%;
+    left: 50%;
+    margin-top: -50%;
+    margin-left: -42%;
+    transform: translate(-50%, -50%);
   }
   .newsletter__successMsg--Pic {
     width: 105.31vw;
@@ -306,7 +281,6 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
   }
 
   .newsletter__successMsg--closeBtn {
-    position: relative;
     width: 7.62vw;
     height: 7.62vw;
     left: 85%;
@@ -315,28 +289,10 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
 
     &::before,
     &::after {
-      position: absolute;
       top: 3.5vw;
       left: 1.78vw;
       width: 4.5vw;
       height: 0.7vw;
-      content: "";
-      background-color: #eef5df;
-      display: none;
-      display: block;
-    }
-    &::before {
-      -ms-transform: rotate(-45deg);
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-    }
-    &::after {
-      -ms-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
-    &:hover {
-      cursor: pointer;
     }
   }
 }
