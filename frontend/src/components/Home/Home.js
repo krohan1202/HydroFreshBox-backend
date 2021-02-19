@@ -49,6 +49,24 @@ function Home() {
                         <li><a className="navlinks__contact" href="/contact">Contact</a></li>
                     </ul>
                 </nav>
+                <div className="menu-wrap">
+                    <input type="checkbox" className="toggler" />
+                    <div className="hamburger">
+                        <div className="line"></div>
+                        <div className="line2"></div>
+                    </div>
+                    <div className="menu">
+                        <div>
+                            <ul>
+                                <li><a className="hamburger__navlinks__shop" href="/shop">Shop</a></li>
+                                <li><a className="hamburger__navlinks__about" href="/about">About</a></li>
+                                <li><a className="hamburger__navlinks__pods" href="/pods">Pods</a></li>
+                                <li><a className="hamburger__navlinks__news" href="/news">News</a></li>
+                                <li><a className="hamburger__navlinks__contact" href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <hr className="nav__bottomLine"></hr>
             </div>
             
