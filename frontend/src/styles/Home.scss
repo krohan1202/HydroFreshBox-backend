@@ -13,7 +13,9 @@ li {
 a {
   text-decoration: none;
 }
-
+.menu-wrap {
+  display: none;
+}
 #navbar {
   position: fixed;
   width: 100vw;
@@ -860,6 +862,7 @@ a {
     top: 0;
     left: 0;
     z-index: 5;
+    display: inline;
 
     .toggler {
       position: absolute;
@@ -881,10 +884,15 @@ a {
       height: 5.9vw;
       padding: 1rem;
       border-radius: 50%;
-      background: #ffeed9;
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+    .notScrolledHamBg {
+      background: #ffeed9;
+    }
+    .scrolledHamBg {
+      background: #00ac;
     }
 
     /* Hamburger Line */

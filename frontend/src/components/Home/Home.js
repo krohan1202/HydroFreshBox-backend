@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import locomotiveScroll from "locomotive-scroll";
 import "../../styles/Home.scss";
 import "../../styles/base_loco.css";
@@ -32,7 +32,29 @@ function Home() {
         smooth: true,
         multiplier: 1,
         });
-    });
+    }, []);
+
+    const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, [scrolled]);
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 700) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  let x = ["hamburger"];
+  if (scrolled) {
+    x.push("scrolledHamBg");
+  } else {
+    x.push("notScrolledHamBg");
+  }
 
     return (
         
@@ -49,9 +71,11 @@ function Home() {
                         <li><a className="navlinks__contact" href="/contact">Contact</a></li>
                     </ul>
                 </nav>
-                <div className="menu-wrap">
+                <hr className="nav__bottomLine"></hr>
+            </div>
+            <div className="menu-wrap">
                     <input type="checkbox" className="toggler" />
-                    <div className="hamburger">
+                    <div className={x.join(" ")}>
                         <div className="line"></div>
                         <div className="line2"></div>
                     </div>
@@ -67,8 +91,6 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <hr className="nav__bottomLine"></hr>
-            </div>
             
             
                 <div className="hero__background"></div>
