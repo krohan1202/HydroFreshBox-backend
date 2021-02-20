@@ -213,7 +213,7 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
     margin-top: 9.6vw;
   }
   .newsletter__firstHeading--toGet {
-    margin-left: 0.97vw;
+    margin-left: 1.97vw;
   }
   .newsletter__secondHeading--latestUpdates {
     font-size: 8.6vw;
@@ -237,6 +237,7 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
     height: 13vw;
     width: 40.6vw;
     font-size: 3.97vw;
+    z-index: 1;
 
     #newsletter__subscribeBtn--arrow {
       width: 2.2vw;

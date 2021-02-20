@@ -58,11 +58,11 @@ function Home() {
                     <div className="menu">
                         <div>
                             <ul>
-                                <li><a className="hamburger__navlinks__shop" href="/shop">Shop</a></li>
-                                <li><a className="hamburger__navlinks__about" href="/about">About</a></li>
-                                <li><a className="hamburger__navlinks__pods" href="/pods">Pods</a></li>
-                                <li><a className="hamburger__navlinks__news" href="/news">News</a></li>
-                                <li><a className="hamburger__navlinks__contact" href="/contact">Contact</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__shop" href="/shop">Shop</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__about" href="/about">About</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__pods" href="/pods">Pods</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__news" href="/news">News</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__contact" href="/contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>

@@ -859,29 +859,29 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 5;
 
     .toggler {
       position: absolute;
       top: 1.9vw;
-      right: 3.5vw;
-      z-index: 2;
+      right: 5vw;
+      z-index: 11;
       cursor: pointer;
-      width: 50px;
-      height: 50px;
+      width: 12.9vw;
+      height: 12.9vw;
       opacity: 0;
     }
 
     .hamburger {
       position: absolute;
       top: 1.9vw;
-      right: 3.5vw;
-      z-index: 1;
-      width: 25px;
-      height: 25px;
+      right: 5vw;
+      z-index: 10;
+      width: 5.9vw;
+      height: 5.9vw;
       padding: 1rem;
       border-radius: 50%;
-      background: #00ac85;
+      background: #ffeed9;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -893,8 +893,8 @@ a {
       position: relative;
       flex: none;
       width: 100%;
-      height: 3px;
-      background: #fff;
+      height: 4px;
+      background: $base-green;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -902,88 +902,92 @@ a {
     }
     .line {
       margin-top: 3.5vw;
-      margin-left: 2.5vw;
+      margin-left: 2vw;
     }
-    /* Hamburger Lines - Top & Bottom */
     .line2 {
       content: "";
       position: absolute;
-      z-index: 1;
       top: 5.5vw;
-      width: 66%;
-      height: 3px;
-      background: #fff;
+      width: 60%;
+      height: 4px;
     }
-
-    /* Moves Line Down */
-    .hamburger > div::after {
-      top: 1px;
-    }
-
     /* Toggler Animation */
     .toggler:checked + .hamburger > .line {
-      width: 150%;
-      top: -1.3vw;
-      margin-left: 0.5vw;
+      background: #ffeed9;
+      width: 145%;
+      top: -1vw;
+      margin-left: 0.2vw;
       transform: rotate(135deg);
     }
     .toggler:checked + .hamburger > .line2 {
+      background: #ffeed9;
       top: 7vw;
       transform: rotate(225deg);
     }
-
+    .toggler:checked + .hamburger {
+      background: transparent;
+    }
     .toggler:checked ~ .menu {
       visibility: visible;
+      height: 100vh;
+      width: 100vw;
+      transition: all 0.8s ease;
 
       & > div {
+        border-radius: 0%;
         transform: scale(1);
         transition-duration: 0.7s;
       }
     }
 
     .menu {
-      // position: fixed;
       top: 0;
       left: 0;
-      height: 100vh;
+      height: 17vw;
       width: 100vw;
       visibility: hidden;
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: all 0.8s ease;
 
       & > div {
-        background: rgba(0, 172, 133, 0.95);
+        background: rgba(0, 172, 133, 0.985);
         border-radius: 50%;
         width: 200vw;
-        height: 200vw;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
         transform: scale(0);
         transition: all 0.4s ease;
       }
-
-      & > div > div {
+      & > div > ul {
         text-align: center;
-        max-width: 90vw;
-        max-height: 100vh;
-        opacity: 0;
-        transition: opacity 0.4s ease;
-      }
-
-      & > div > div > ul > li {
-        list-style: none;
-        color: #fff;
-        font-size: 3vw;
-        padding: 4vw;
-
-        & > a {
-          color: #fff;
-          transition: color 0.4s ease;
-        }
+        margin: 0;
+        top: 10vh;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
       }
     }
+  }
+  .hamlinks {
+    margin: 6vh 0;
+    text-align: center;
+    margin-left: -9vw;
+  }
+  .hamburger__navlinks__shop,
+  .hamburger__navlinks__about,
+  .hamburger__navlinks__pods,
+  .hamburger__navlinks__news,
+  .hamburger__navlinks__contact {
+    color: #ffeed9;
+    text-align: center;
+    transition: color 0.4s ease;
+    font-size: 5.5vh;
+    font-family: "Fraunces", serif;
+    font-style: italic;
   }
 }
