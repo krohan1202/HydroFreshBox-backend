@@ -25,6 +25,12 @@ a {
   z-index: 2;
   opacity: 95%;
 }
+.nav__logo {
+  position: fixed;
+  top: 1.32vw;
+  left: 5.8vw;
+  width: 5vw;
+}
 .navlinks__shop,
 .navlinks__about,
 .navlinks__pods,
@@ -889,10 +895,10 @@ a {
       justify-content: center;
     }
     .notScrolledHamBg {
-      background: #ffeed9;
+      background: #afe9ef;
     }
     .scrolledHamBg {
-      background: #00ac;
+      background: #ffeed9;
     }
 
     /* Hamburger Line */

@@ -5,6 +5,7 @@ import "../../styles/base_loco.css";
 import Newsletter from "./Newsletter";
 
 //Hero assets
+import NavLogo from "../../assets/Home/1-Hero Section/NavLogo.png";
 import HeroPic from "../../assets/Home/1-Hero Section/Hero Pic.png";
 //How we make an impact assets
 import LeftPic from "../../assets/Home/2-How we make an impact/Left side Pic.png";
@@ -62,7 +63,7 @@ function Home() {
             <div className="scroll" ref={scrollRef}>
             <div>
                 <nav data-scroll-sticky id="navbar">
-                    <p className="nav__logo">LOGO</p>
+                    <img src={NavLogo} className="nav__logo" />
                     <ul className="navlinks">
                         <li><a className="navlinks__shop" href="/shop">Shop</a></li>
                         <li><a className="navlinks__about" href="/about">About</a></li>
