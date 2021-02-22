@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import $ from "jquery";
 import locomotiveScroll from "locomotive-scroll";
 import "../../styles/Home.scss";
 import "../../styles/base_loco.css";
@@ -25,6 +26,20 @@ import FooterLogo from "../../assets/Home/7-Footer/FooterLogo.png";
 import FooterBg from "../../assets/Home/7-Footer/Bg.png";
 
 function Home() {
+    
+    useEffect(() => {
+        $('.loader__count').each(function () {
+            $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 2800,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    }, []);
 
     const scrollRef = React.createRef();
 
@@ -61,7 +76,14 @@ function Home() {
     return (
         
         <>
+            {/* Loader */}
+            <div id="loader">
+                <span className="loader__count">99</span>
+                <span className="loader__percent">%</span>
+            </div>
+            {/* For smooth scroll */}
             <div className="scroll" ref={scrollRef}>
+            {/* Home code starts */}
             <div>
                 <nav data-scroll-sticky id="navbar">
                     <img src={NavLogo} className="nav__logo" />

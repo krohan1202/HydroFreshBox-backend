@@ -7,6 +7,42 @@ $gadugi: "Gadugi", serif;
 $helve: "Helvetica", sans-serif;
 $tech-sans: "tech-sans", sans-serif;
 
+#loader {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #afe9ef;
+  left: 0;
+  top: 0;
+  animation: opa 3.8s;
+  animation-fill-mode: forwards;
+  z-index: 100;
+}
+@keyframes opa {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    display: none;
+  }
+}
+.loader__count,
+.loader__percent {
+  position: absolute;
+  bottom: 0%;
+  color: #333;
+  margin-left: 30px;
+  font-size: 13vw;
+  font-family: "Fraunces", serif;
+}
+.loader__percent {
+  left: 18vw;
+}
+
 li {
   list-style-type: none;
 }
