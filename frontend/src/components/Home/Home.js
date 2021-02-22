@@ -21,6 +21,7 @@ import ButtonHoverArrow from "../../assets/Home/3-Know about process of farming/
 // Updated methods assets
 import Updated__Left from "../../assets/Home/4-Updated methods/Left Side Pic.png";
 //Footer assets
+import FooterLogo from "../../assets/Home/7-Footer/FooterLogo.png";
 import FooterBg from "../../assets/Home/7-Footer/Bg.png";
 
 function Home() {
@@ -211,10 +212,12 @@ function Home() {
             <Newsletter />
 
             {/* Footer */}
-            <div>
+            <>
                 <img src={FooterBg} className="footer__bg" />
 
                 <p className="footer__Heading">Hydro Fresh Box</p>
+                
+                <img src={FooterLogo} className="footer__logo" />
                 <span className="footer__NavigatePart">
                     <ul>
                     <li className="footer__NavigatePart--Heading">Navigate</li>
@@ -244,7 +247,7 @@ function Home() {
                 <a href="#"><p className="footer__termsAndConditions">Terms & Conditions</p></a>
                 <p className="footer__rightsReserved">All rights reserved — 2021 © Hydro Fresh Box</p>
                 <a href="#"><p className="footer__privacyPolicy">Privacy Policy</p></a>
-            </div>
+            </>
             </div>
         </>
     )

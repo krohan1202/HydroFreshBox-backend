@@ -282,7 +282,7 @@ a {
   top: -4.5vw;
 }
 .makeAnImpact__MobilePic {
-  visibility: hidden;
+  display: none;
 }
 // Know about process Section
 .process {
@@ -486,6 +486,12 @@ a {
   height: 35.67vw;
   z-index: -1;
 }
+.footer__logo {
+  width: 7.5vw;
+  position: relative;
+  left: 9vw;
+  top: 7.8vw;
+}
 .footer__Heading {
   position: relative;
   text-align: center;
@@ -572,20 +578,24 @@ a {
 // Media query
 @media (max-width: 768px) {
   #navbar {
-    position: fixed;
+    position: relative;
     width: 100vw;
-    height: 4.29vw;
-    left: 0;
-    top: 0;
-    z-index: 0;
-    opacity: 95%;
+    height: 16.29vw;
+    z-index: 5;
+    background-color: #afe9ef;
+  }
+  .nav__logo {
+    position: absolute;
+    top: 5.5vw;
+    left: 7.8vw;
+    width: 20vw;
   }
   .navlinks__shop,
   .navlinks__about,
   .navlinks__pods,
   .navlinks__news,
   .navlinks__contact {
-    visibility: hidden;
+    display: none;
   }
   .nav__bottomLine {
     top: 16.3vw;
@@ -593,6 +603,7 @@ a {
     position: absolute;
   }
   .hero__background {
+    z-index: -1;
     width: 100vw;
     height: 197.5vw;
   }
@@ -636,6 +647,7 @@ a {
     height: 156vw;
   }
   .makeAnImpact__Heading {
+    font-size: 17.2px;
     top: 11vw;
   }
   .makeAnImpact__text {
@@ -672,10 +684,10 @@ a {
   }
   .makeAnImpact__LeftPic,
   .makeAnImpact__RightPic {
-    visibility: hidden;
+    display: none;
   }
   .makeAnImpact__MobilePic {
-    visibility: visible;
+    display: inline;
     position: absolute;
     top: 106.5vw;
     left: 0;
@@ -704,7 +716,7 @@ a {
     font-size: 4.4vw;
   }
   .process__button--buttonHoverArrow {
-    visibility: hidden;
+    display: none;
   }
   .process__button {
     top: 31vw;
@@ -720,7 +732,7 @@ a {
   }
 
   .process__rightLine {
-    visibility: hidden;
+    display: none;
   }
   .process__blackBigPic {
     top: 140vw;
@@ -755,7 +767,7 @@ a {
     padding-left: 9.3vw;
   }
   .updated__leftPic {
-    visibility: hidden;
+    display: none;
   }
   // What makes us unique
   .makesUsUnique {
@@ -763,6 +775,7 @@ a {
     height: 235vw;
   }
   .makesUsUnique__Heading {
+    font-size: 17.2px;
     top: 12.5vw;
   }
   .makesUsUnique__leftCard,
@@ -804,26 +817,33 @@ a {
   }
   .makesUsUnique__leftLine,
   .makesUsUnique__rightLine {
-    visibility: hidden;
+    display: none;
   }
   // Footer
   .footer__bg {
     height: 112.67vw;
   }
+  .footer__logo {
+    width: 22.7vw;
+    position: absolute;
+    left: 11.5vw;
+    top: 1095.8vw;
+    z-index: 1;
+  }
   .footer__Heading {
-    visibility: hidden;
+    display: none;
   }
   .footer__NavigatePart {
-    left: 58.8vw;
-    top: 1063.45vw;
+    left: 59.2vw;
+    top: 1078.45vw;
   }
   .footer__NeedHelpPart {
     left: 46.3vw;
-    top: 1105vw;
+    top: 1123vw;
   }
   .footer__FollowUsPart {
     left: 1.5vw;
-    top: 1118.4vw;
+    top: 1136.4vw;
   }
   .footer__NavigatePart--Heading,
   .footer__NeedHelpPart--Heading,
@@ -850,19 +870,18 @@ a {
     border: none;
     border-top: 1.4px solid $base-green;
     width: 83.5vw;
-    top: 1153vw;
+    top: 1169vw;
   }
-  .footer__termsAndConditions {
-    visibility: hidden;
+  .footer__termsAndConditions,
+  .footer__privacyPolicy {
+    display: none;
   }
   .footer__rightsReserved {
     width: 61vw;
-    top: 1156.5vw;
+    top: 1172.5vw;
     font-size: 2.73vw;
   }
-  .footer__privacyPolicy {
-    visibility: hidden;
-  }
+
   .menu-wrap {
     position: fixed;
     top: 0;
