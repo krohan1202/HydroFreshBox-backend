@@ -14,7 +14,7 @@ $tech-sans: "tech-sans", sans-serif;
   background: #afe9ef;
   left: 0;
   top: 0;
-  animation: opa 3.8s;
+  animation: opa 4.2s;
   animation-fill-mode: forwards;
   z-index: 100;
 }
@@ -27,20 +27,48 @@ $tech-sans: "tech-sans", sans-serif;
   }
   100% {
     opacity: 1;
-    display: none;
+    // visibility: hidden;
+    // display: none;
   }
 }
+.loader__yellowBg {
+  position: absolute;
+  height: 100vh;
+  background-color: #ffeed9;
+  animation-delay: 1.5s;
+  animation: Loader__enteringBg 2.2s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes Loader__enteringBg {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+.loader__loadingText,
 .loader__count,
 .loader__percent {
   position: absolute;
-  bottom: 0%;
+  bottom: 2.4vw;
   color: #333;
   margin-left: 30px;
-  font-size: 13vw;
+  font-size: 13.5vw;
   font-family: "Fraunces", serif;
 }
+.loader__loadingText {
+  bottom: 18.3vw;
+  // margin-bottom: 17vw;
+  left: 0.5vw;
+  color: $base-green;
+  font-family: $gadugi;
+  font-size: 1.3vw;
+}
 .loader__percent {
-  left: 18vw;
+  font-size: 9.5vw;
+  left: 17vw;
+  margin-bottom: 1vw;
 }
 
 li {
@@ -196,7 +224,7 @@ a {
     stroke-dashoffset: 0;
     stroke-dasharray: 1000;
     animation: svgLineAnimation 2s ease-in-out;
-    animation-delay: 1s;
+    animation-delay: 4.8s;
     animation-fill-mode: forwards;
   }
   @keyframes svgLineAnimation {

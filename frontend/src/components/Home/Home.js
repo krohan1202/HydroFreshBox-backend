@@ -78,6 +78,8 @@ function Home() {
         <>
             {/* Loader */}
             <div id="loader">
+                <div className="loader__yellowBg"></div>
+                <p className="loader__loadingText">Loading freshness...</p>
                 <span className="loader__count">99</span>
                 <span className="loader__percent">%</span>
             </div>
