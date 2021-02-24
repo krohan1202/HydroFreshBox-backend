@@ -26,9 +26,9 @@ $tech-sans: "tech-sans", sans-serif;
     opacity: 1;
   }
   100% {
-    opacity: 1;
-    // visibility: hidden;
-    // display: none;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
   }
 }
 .loader__yellowBg {
@@ -59,7 +59,6 @@ $tech-sans: "tech-sans", sans-serif;
 }
 .loader__loadingText {
   bottom: 18.3vw;
-  // margin-bottom: 17vw;
   left: 0.5vw;
   color: $base-green;
   font-family: $gadugi;
@@ -257,7 +256,7 @@ a {
   color: #494949;
   font-size: 16.4px;
   position: relative;
-  top: 6.2vw;
+  top: 5.2vw;
 }
 .makeAnImpact__text {
   font-family: $helve;
@@ -369,7 +368,7 @@ a {
   font-size: 5.22vw;
   width: 50%;
   font-weight: 400;
-  top: 7vw;
+  top: 8vw;
 }
 .process__text {
   top: 8vw;
@@ -639,8 +638,24 @@ a {
   left: 84.8%;
 }
 
-// Media query
+// Media queries
+
 @media (max-width: 768px) {
+  .loader__loadingText,
+  .loader__count,
+  .loader__percent {
+    bottom: 8vw;
+    font-size: 29.5vw;
+  }
+  .loader__loadingText {
+    bottom: 40.5vw;
+    font-size: 5vw;
+  }
+  .loader__percent {
+    font-size: 21.5vw;
+    left: 37vw;
+    margin-bottom: 2vw;
+  }
   #navbar {
     position: relative;
     width: 100vw;
@@ -669,7 +684,7 @@ a {
   .hero__background {
     z-index: -1;
     width: 100vw;
-    height: 197.5vw;
+    height: 182.5vw;
   }
   // Main Hero Heading
   .hero__headingWords {
@@ -695,35 +710,35 @@ a {
   }
   .hero__pic {
     position: absolute;
-    width: 42vw;
-    left: 49.8vw;
-    top: 141.68vw;
+    width: 44vw;
+    left: 45.8vw;
+    top: 143.68vw;
   }
   #hero__pic--orangeLine {
     position: absolute;
-    width: 42vw;
-    left: 50.35vw;
-    top: 156.6vw;
+    width: 44vw;
+    left: 46.4vw;
+    top: 158.6vw;
   }
 
   // How we make an impact Section
   .makeAnImpact {
-    height: 156vw;
+    height: 160vw;
   }
   .makeAnImpact__Heading {
     font-size: 17.2px;
-    top: 11vw;
+    top: 11.7vw;
   }
   .makeAnImpact__text {
     width: 66.01vw;
-    top: 13.5vw;
+    top: 14.5vw;
     font-size: 5vw;
   }
   .makeAnImpact__knowMoreBtn,
   .updated__knowMoreBtn {
     width: 35.8vw;
     height: 11.9vw;
-    top: 77.7vw;
+    top: 78.7vw;
     padding-left: 5.9vw;
     font-size: 4vw;
     z-index: 1;
@@ -753,7 +768,7 @@ a {
   .makeAnImpact__MobilePic {
     display: inline;
     position: absolute;
-    top: 106.5vw;
+    top: 109.5vw;
     left: 0;
     width: 100vw;
     z-index: 1;
@@ -899,15 +914,15 @@ a {
   }
   .footer__NavigatePart {
     left: 59.2vw;
-    top: 1078.45vw;
+    top: 1068.45vw;
   }
   .footer__NeedHelpPart {
     left: 46.3vw;
-    top: 1123vw;
+    top: 1113vw;
   }
   .footer__FollowUsPart {
     left: 1.5vw;
-    top: 1136.4vw;
+    top: 1126.4vw;
   }
   .footer__NavigatePart--Heading,
   .footer__NeedHelpPart--Heading,
@@ -934,7 +949,7 @@ a {
     border: none;
     border-top: 1.4px solid $base-green;
     width: 83.5vw;
-    top: 1169vw;
+    top: 1159vw;
   }
   .footer__termsAndConditions,
   .footer__privacyPolicy {
@@ -942,7 +957,7 @@ a {
   }
   .footer__rightsReserved {
     width: 61vw;
-    top: 1172.5vw;
+    top: 1162.5vw;
     font-size: 2.73vw;
   }
 
@@ -1011,14 +1026,16 @@ a {
     /* Toggler Animation */
     .toggler:checked + .hamburger > .line {
       background: #ffeed9;
-      width: 145%;
-      top: -1vw;
+      width: 140%;
+      top: -1.25vw;
       margin-left: 0.2vw;
+      height: 2px;
       transform: rotate(135deg);
     }
     .toggler:checked + .hamburger > .line2 {
       background: #ffeed9;
       top: 7vw;
+      height: 2px;
       transform: rotate(225deg);
     }
     .toggler:checked + .hamburger {
@@ -1036,7 +1053,6 @@ a {
         transition-duration: 0.7s;
       }
     }
-
     .menu {
       top: 0;
       left: 0;
@@ -1061,30 +1077,73 @@ a {
         transition: all 0.4s ease;
       }
       & > div > ul {
-        text-align: center;
         margin: 0;
-        top: 10vh;
+        top: 15vh;
         position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
+        left: 0;
       }
     }
   }
+  .menu__Heading {
+    position: absolute;
+    color: #ccff99;
+    top: -0.5vh;
+    left: 0;
+    margin-left: 4.8vh;
+    font-family: "Fraunces", serif;
+    font-size: 6.6vw;
+  }
   .hamlinks {
-    margin: 6vh 0;
-    text-align: center;
-    margin-left: -9vw;
+    margin: 1vh 0;
   }
   .hamburger__navlinks__shop,
   .hamburger__navlinks__about,
   .hamburger__navlinks__pods,
   .hamburger__navlinks__news,
   .hamburger__navlinks__contact {
-    color: #ffeed9;
+    color: #fff8ef;
     text-align: center;
     transition: color 0.4s ease;
-    font-size: 5.5vh;
+    font-size: 6.5vh;
     font-family: "Fraunces", serif;
-    font-style: italic;
+  }
+  .menu__NeedHelpPart {
+    position: absolute;
+    left: 0;
+    top: 64vh;
+  }
+  .menu__NeedHelpPart--links,
+  .menu__FollowUsPart--links {
+    margin: 0.7vh 0;
+  }
+  .menu__NeedHelpPart--customerService,
+  .menu__NeedHelpPart--locations,
+  .menu__NeedHelpPart--news {
+    color: #ecffd9;
+    font-family: $sweet-sans-reg;
+    font-size: 2vh;
+  }
+  .menu__FollowUsPart {
+    position: absolute;
+    left: 0;
+    top: 80vh;
+  }
+  .menu__FollowUsPart--Heading {
+    font-size: 4.23vw;
+    font-family: $sweet-sans-medium;
+    color: #fff;
+    margin-bottom: 1.5vh;
+  }
+  .menu__FollowUsPart--insta,
+  .menu__FollowUsPart--fb,
+  .menu__termsAndConditions {
+    color: #ecffd9;
+    font-size: 2vh;
+    font-family: $sweet-sans-reg;
+  }
+  .menu__termsAndConditions {
+    position: absolute;
+    bottom: 10vh;
+    right: 10%;
   }
 }

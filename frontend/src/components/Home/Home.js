@@ -47,7 +47,7 @@ function Home() {
         const scroll = new locomotiveScroll({
         el: scrollRef.current,
         smooth: true,
-        multiplier: 1,
+        multiplier: 1.5,
         });
     }, []);
 
@@ -107,6 +107,7 @@ function Home() {
                     </div>
                     <div className="menu">
                         <div>
+                        <p className="menu__Heading">Hydro Fresh Box</p>
                             <ul>
                                 <li className="hamlinks"><a className="hamburger__navlinks__shop" href="/shop">Shop</a></li>
                                 <li className="hamlinks"><a className="hamburger__navlinks__about" href="/about">About</a></li>
@@ -114,7 +115,22 @@ function Home() {
                                 <li className="hamlinks"><a className="hamburger__navlinks__news" href="/news">News</a></li>
                                 <li className="hamlinks"><a className="hamburger__navlinks__contact" href="/contact">Contact</a></li>
                             </ul>
+                            <a href="#" className="menu__termsAndConditions">Terms & Conditions</a>
                         </div>
+                        <span className="menu__NeedHelpPart">
+                            <ul>
+                                <li className="menu__NeedHelpPart--links"><a href="#" className="menu__NeedHelpPart--customerService">Customer Service</a></li>
+                                <li className="menu__NeedHelpPart--links"><a href="#" className="menu__NeedHelpPart--locations">Locations</a></li>
+                                <li className="menu__NeedHelpPart--links"><a href="#" className="menu__NeedHelpPart--news">News</a></li>
+                            </ul>
+                        </span>
+                        <span className="menu__FollowUsPart">
+                            <ul>
+                            <li className="menu__FollowUsPart--Heading">Follow us</li>
+                            <li className="menu__FollowUsPart--links"><a href="#" className="menu__FollowUsPart--insta">Instagram</a></li>
+                                <li className="menu__FollowUsPart--links"><a href="#" className="menu__FollowUsPart--fb">Facebook</a></li>
+                            </ul>
+                        </span>
                     </div>
                 </div>
             
@@ -163,7 +179,7 @@ function Home() {
             
             {/* Know about process */}
             <div className="process">
-                <h1 data-scroll data-scroll-delay="0.1" data-scroll-speed="1" className="c-lerp-block_title process__Heading">Know about the process of farming</h1>
+                <h1 className="process__Heading">Know about the process of farming</h1>
                 <p className="process__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua elit, sed doutinci, et dolore magna aliqua.</p>
                 
                 <a href="#" className="process__button">
@@ -173,7 +189,7 @@ function Home() {
 
                 <img src={RightLine} className="process__rightLine" />
                 <img src={BackBigPic} className="process__blackBigPic" />
-                <img data-scroll data-scroll-delay="0.05" data-scroll-speed="2"
+                <img data-scroll data-scroll-delay="0.5" data-scroll-speed="2"
         data-scroll-position="bottom" src={FrontSmallPic} className="process__frontSmallPic" />
 
                 {/* Updated methods */}
