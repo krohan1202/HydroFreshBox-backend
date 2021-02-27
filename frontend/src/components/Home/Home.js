@@ -88,7 +88,7 @@ function Home() {
             {/* Home code starts */}
             <div>
                 <nav data-scroll-sticky id="navbar">
-                    <img src={NavLogo} className="nav__logo" />
+                    <img src={NavLogo} className="nav__logo" alt="Logo"/>
                     <ul className="navlinks">
                         <li><a className="navlinks__shop" href="/shop">Shop</a></li>
                         <li><a className="navlinks__about" href="/about">About</a></li>
@@ -158,7 +158,7 @@ function Home() {
                 </a>
             
 
-            <img src={HeroPic} className="hero__pic"/>
+            <img src={HeroPic} className="hero__pic" alt="HeroPic"/>
             <svg id="hero__pic--orangeLine" viewBox="0 0 735 247" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path className="svgLine" d="M49.4997 197C30.9225 207.329 18.8496 213.564 6.97569 228.068C-4.89819 242.572 26.1059 242.902 43.0921 241.253C111.505 230.989 335.326 175.101 683.305 33.6585C687.687 31.6202 691.107 30.0903 692.27 29.5802C700.252 27.5104 718.194 20.7536 726.103 10.2842C734.012 -0.185244 672.294 6.84977 636 11.5" stroke="#FF640D" stroke-width="8"/>
             </svg>
@@ -172,9 +172,9 @@ function Home() {
                     <img id="makeAnImpact__knowMoreBtn--arrow" src={Arrow} alt="->"/> Know More
                 </a>
 
-                <img src={LeftPic} className="makeAnImpact__LeftPic" />
-                <img src={RightPic} className="makeAnImpact__RightPic" />
-                <img src={makeAnImpactMobilePic} className="makeAnImpact__MobilePic" />
+                <img src={LeftPic} className="makeAnImpact__LeftPic" alt="LeftPlantPic"/>
+                <img src={RightPic} className="makeAnImpact__RightPic" alt="RightPlantPic"/>
+                <img src={makeAnImpactMobilePic} className="makeAnImpact__MobilePic" alt="PlantPic"/>
             </div>
             
             {/* Know about process */}
@@ -184,13 +184,13 @@ function Home() {
                 
                 <a href="#" className="process__button">
                     <p id="process__button--LearnMore">Learn more</p>
-                    <img src={ButtonHoverArrow} className="process__button--buttonHoverArrow" />
+                    <img src={ButtonHoverArrow} className="process__button--buttonHoverArrow" alt="Arrow"/>
                 </a>
 
-                <img src={RightLine} className="process__rightLine" />
-                <img src={BackBigPic} className="process__blackBigPic" />
+                <img src={RightLine} className="process__rightLine" alt="RightLinePic"/>
+                <img src={BackBigPic} className="process__backBigPic" alt="BackPic"/>
                 <img data-scroll data-scroll-delay="0.5" data-scroll-speed="2"
-        data-scroll-position="bottom" src={FrontSmallPic} className="process__frontSmallPic" />
+        data-scroll-position="bottom" src={FrontSmallPic} className="process__frontSmallPic" alt="FrontSmallPic"/>
 
                 {/* Updated methods */}
                 <h1 className="updated__Heading">Updated methods, Healthier produce</h1>
@@ -199,7 +199,7 @@ function Home() {
                 <a className="updated__knowMoreBtn" href="/news">
                     <img id="updated__knowMoreBtn--arrow" src={Arrow} alt="->"/> View news
                 </a>
-                <img src={Updated__Left} className="updated__leftPic" />
+                <img src={Updated__Left} className="updated__leftPic" alt="WorkingPic"/>
             </div>
 
             {/* What makes us unique */}
@@ -253,11 +253,11 @@ function Home() {
 
             {/* Footer */}
             <>
-                <img src={FooterBg} className="footer__bg" />
+                <img src={FooterBg} className="footer__bg" alt="FooterBg"/>
 
                 <p className="footer__Heading">Hydro Fresh Box</p>
                 
-                <img src={FooterLogo} className="footer__logo" />
+                <img src={FooterLogo} className="footer__logo" alt="Logo"/>
                 <span className="footer__NavigatePart">
                     <ul>
                     <li className="footer__NavigatePart--Heading">Navigate</li>
