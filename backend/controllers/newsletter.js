@@ -11,6 +11,7 @@ exports.getNewsletterEmail = (req, res) => {
     }
   
     const userNewsletterEmail = new Newsletter(req.body);
+    // console.table(req.body);
     userNewsletterEmail.save((err, user) => {
       if (err) {
         return res.status(400).json({
