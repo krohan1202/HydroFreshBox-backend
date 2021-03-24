@@ -88,7 +88,7 @@ function Home() {
             {/* Home code starts */}
             <div>
                 <nav data-scroll-sticky id="navbar">
-                    <img src={NavLogo} className="nav__logo" alt="Logo"/>
+                    <a href="/"><img src={NavLogo} className="nav__logo" alt="Logo"/></a>
                     <ul className="navlinks">
                         <li><a className="navlinks__shop" href="/shop">Shop</a></li>
                         <li><a className="navlinks__about" href="/about">About</a></li>
@@ -257,7 +257,7 @@ function Home() {
 
                 <p className="footer__Heading">Hydro Fresh Box</p>
                 
-                <img src={FooterLogo} className="footer__logo" alt="Logo"/>
+                <a href="/"><img src={FooterLogo} className="footer__logo" alt="Logo"/></a>
                 <span className="footer__NavigatePart">
                     <ul>
                     <li className="footer__NavigatePart--Heading">Navigate</li>

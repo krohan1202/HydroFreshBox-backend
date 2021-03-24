@@ -165,12 +165,20 @@ a {
   position: absolute;
   font-family: $sweet-sans-bold;
   font-size: 3.52vw;
-  color: #1a1917;
+  color: #1d271f;
   left: 6vw;
   top: 15.56vw;
   width: 45vw;
   height: 15vw;
   line-height: 4.37vw;
+
+  &::selection {
+    color: $dark-green;
+    background: rgba(0, 172, 133, 0.45);
+  }
+  &::-moz-selection {
+    background: rgba(0, 172, 133, 0.45);
+  }
 }
 #hero__arrow {
   width: 1.75vw;
@@ -373,13 +381,13 @@ a {
 }
 .process__Heading {
   font-family: $tech-sans;
-  font-size: 5.22vw;
+  font-size: 5.52vw;
   width: 50%;
   font-weight: 400;
-  top: 8vw;
+  top: 7vw;
 }
 .process__text {
-  top: 8vw;
+  top: 6vw;
   width: 35%;
   font-family: $helve;
   font-size: 1.22vw;
@@ -392,7 +400,7 @@ a {
   opacity: 0;
 }
 .process__button {
-  top: 16.9vw;
+  top: 15.9vw;
   height: 11.9vw;
   width: 11.9vw;
   border-radius: 50%;
