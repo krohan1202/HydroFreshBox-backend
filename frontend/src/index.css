@@ -42,3 +42,18 @@ code {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+* ::selection {
+  color: #003f12;
+  background: rgba(0, 172, 133, 0.5);
+}
+*::-moz-selection {
+  background: rgba(0, 172, 133, 0.5);
+}
+
+img {
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
