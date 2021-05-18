@@ -2,5 +2,5 @@
 
 Indoor Farming Website
 
-MongoDB
-Hosting creds
+1. MongoDB
+2. Hosting creds
