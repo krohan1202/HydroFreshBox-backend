@@ -3,4 +3,4 @@
 Indoor Farming Website
 
 1. MongoDB
-2. Hosting creds
+2. Hosting creds - Netlify, Heroku
