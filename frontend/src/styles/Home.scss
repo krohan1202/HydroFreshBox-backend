@@ -6,7 +6,20 @@ $sweet-sans-bold: "sweet-sans-pro-bold", sans-serif;
 $gadugi: "Gadugi", serif;
 $helve: "Helvetica", sans-serif;
 $tech-sans: "tech-sans", sans-serif;
-
+.count {
+  position: relative;
+  height: 9vw;
+  background-color: #f6fff7;
+}
+.count__heading {
+  position: relative;
+  width: 100vw;
+  text-align: center;
+  top: 34.5%;
+  transform: translateY(-50%);
+  color: $dark-green;
+  font-family: $helve;
+}
 #loader {
   position: absolute;
   width: 100vw;

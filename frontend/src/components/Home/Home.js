@@ -71,6 +71,15 @@ function Home() {
     x.push("notScrolledHamBg");
   }
 
+  const [count, setCount] = React.useState(1);
+
+  React.useEffect(() => {
+    let id = setInterval(() => {
+      setCount((c) => c + 1);
+    }, 1000);
+    return () => clearInterval(id);
+  }, []);
+
     return (
         
         <>
@@ -161,7 +170,10 @@ function Home() {
                 <path className="svgLine" d="M49.4997 197C30.9225 207.329 18.8496 213.564 6.97569 228.068C-4.89819 242.572 26.1059 242.902 43.0921 241.253C111.505 230.989 335.326 175.101 683.305 33.6585C687.687 31.6202 691.107 30.0903 692.27 29.5802C700.252 27.5104 718.194 20.7536 726.103 10.2842C734.012 -0.185244 672.294 6.84977 636 11.5" stroke="#FF640D" stroke-width="8"/>
             </svg>
 
-            
+            {/* Counter */}
+            <div className="count">
+                <h1 className="count__heading">🌱 {Math.floor(count / 6)} plants grown in the last {Math.floor(count / 15)+1} minute🌱</h1>
+            </div>
             {/* How we make an impact / About Us Section */}
             <div className="makeAnImpact">
                 <p className="makeAnImpact__Heading">How we make an impact</p>
