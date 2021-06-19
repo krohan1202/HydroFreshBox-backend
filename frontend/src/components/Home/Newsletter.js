@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import $ from "jquery";
+import axios from "axios";
 import "../../styles/Newsletter.scss";
-import { newsletter } from "../../apiCalls/newsletterApi";
+// import { newsletter } from "../../apiCalls/newsletterApi";
 //Assets
 import Arrow from "../../assets/Home/2-How we make an impact/Arrow.png";
 import successPic from "../../assets/Home/6-Newsletter/Success Pic.png";
@@ -24,7 +25,8 @@ function Newsletter() {
       // console.log(values);
     event.preventDefault();
 
-    newsletter({email})
+    // newsletter({email})
+    axios.post("/", {email})
     .then((values) => {
       console.log(values, email);
       if (values.error) {
