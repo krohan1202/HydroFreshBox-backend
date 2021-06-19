@@ -109,7 +109,7 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
 .newsletter__successMessage--background {
   background-color: rgb(207, 207, 207);
   opacity: 0.2;
-  top: 218.1vw;
+  top: 215.2vw;
   left: 0%;
   width: 100vw;
   height: 36.37vw;
@@ -121,7 +121,7 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
   width: 45vw;
   height: 33.38vw;
   position: fixed;
-  top: 219.5vw;
+  top: 217vw;
   left: 27%;
   transform: translate(-50%, -50%);
   border-radius: 2.6vw;
@@ -259,14 +259,14 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
     top: 0vw;
     left: 0%;
     height: 100vh;
-    z-index: 1;
+    z-index: 2;
   }
 
   .newsletter__successMessage {
-    z-index: 1;
+    z-index: 3;
     width: 85vw;
     height: 106vw;
-    top: 50%;
+    top: 49%;
     left: 50%;
     margin-top: -50%;
     margin-left: -42%;
@@ -286,7 +286,7 @@ $sweet-sans-medium: "sweet-sans-pro-medium", sans-serif;
     height: 7.62vw;
     left: 85%;
     top: 5%;
-    z-index: 1;
+    z-index: 3;
 
     &::before,
     &::after {
