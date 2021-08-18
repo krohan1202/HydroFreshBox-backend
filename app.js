@@ -27,4 +27,8 @@ app.use(bodyParser.json());
 //Routes
 app.use("/", newsletter);
 
+app.get("/", (req, res) =>{
+  res.send("Working");
+} )
+
 app.listen(process.env.PORT || 8000, () => console.log("Server connected!"));
